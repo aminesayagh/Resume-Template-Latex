@@ -30,14 +30,14 @@
 % Custom commands
 \newcommand{\resumetitle}[1]{%
   {\fontsize{11pt}{14pt}\selectfont
-  \addfontfeatures{LetterSpace=20.0}
+  \addfontfeatures{LetterSpace=12.0}
   \textbf{#1}\xspace}
 }
 
 \newcommand{\resumeprofession}[1]{%
   {\fontsize{7pt}{10.8pt}\selectfont
-  \addfontfeatures{LetterSpace=3.2}
-  #1\xspace}
+  \addfontfeatures{LetterSpace=32.0}
+  \textbf{#1}\xspace}
 }
 
 \newcommand{\sectiontitle}[1]{%
@@ -91,26 +91,30 @@
 
 \begin{center}
   \linespread{1.1}\selectfont
-  \resumetitle{John Doe Doe} \\
-  \resumeprofession{Software Engineer}
+  \resumetitle{Mohamed Amine SAYAGH} \\
+  \resumeprofession{SOFTWARE DEVELOPER}
 \end{center}
 
-\vspace{1cm}
+\setlength{\columnsep}{0.9cm} % Adjust this value as needed
+\raggedcolumns % Reduce the margin on each column
 
-\sectiontitle{Section Title Example. This is a paragraph using the \textbackslash para command. It is styled with a small font size and slight letter spacing, typically used for body text} \\
-\vspace{0.5cm}
+\renewcommand{\arraystretch}{1.4} % Adjust this value to increase/decrease line spacing
 
-\experiencetitle{Experience Title Example, This is a paragraph using the \textbackslash para command. It is styled with a small font size and slight letter spacing, typically used for body text} \\
-\vspace{0.2cm}
-
-\para{This is a paragraph using the \textbackslash para command. It is styled with a small font size and slight letter spacing, typically used for body text, with no italics, bold, or other special formatting, and a small letter spacing, typically used for body text, with no italics, bold, or other special formatting.} \\
-\vspace{0.5cm}
-
-\paraitalic{This is a paragraph using the \textbackslash paraitalic command. It is styled similarly to the \textbackslash para command but italicized and with more letter spacing, typically used for quotes or other similar text, with a small font size and slight letter spacing.} \\
-\vspace{0.5cm}
-
-\linkfont{This is a paragraph using the \textbackslash linkfont command, typically used for hyperlinks or other similar text, with a small font size and slight letter spacing, but no italics, bold, or other special formatting, and a different color.} \\
-\vspace{0.5cm}
-
+\begin{multicols}{3}
+    \begin{tabularx}{\linewidth}{@{}Xr@{}}
+        \para{Email:} & \linkfont{\href{mailto:contact@masayagh.com}{contact@masayagh.com}} \\
+        \para{Phone:} & \para{Ma: \linkfont{\href{tel:+989123456789}{+989123456789}}} \\
+    \end{tabularx}
+    
+    \begin{tabularx}{\linewidth}{@{}Xr@{}}
+        \para{LinkedIn:} & \linkfont{\href{https://www.linkedin.com/in/masayagh}{linkedin.com/in/masayagh}} \\
+        \para{GitHub:} & \linkfont{\href{https://github.com/masayagh}{github.com/masayagh}} \\
+    \end{tabularx}
+    
+    \begin{tabularx}{\linewidth}{@{}Xr@{}}
+        \para{Programming Lang:} & \para{TypeScript, PHP, Golang} \\
+        \para{Portfolio:} & \linkfont{\href{https://masayagh.com}{masayagh.com}} \\
+    \end{tabularx}
+\end{multicols}
 
 \end{document}
