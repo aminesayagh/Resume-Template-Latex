@@ -52,7 +52,7 @@
   Scale = 1.0
 ]
 
-\geometry{left=1cm, right=1cm, top=0.8cm, bottom=0.8cm}
+\geometry{left=0.8cm, right=0.8cm, top=0.8cm, bottom=0.8cm}
 
 % Custom commands
 \newcommand{\resumetitle}[1]{%
@@ -68,16 +68,14 @@
 }
 
 \newcommand{\sectiontitle}[1]{%
-  {\fontsize{7.6pt}{8.36pt}\selectfont
-  \addfontfeatures{LetterSpace=28.0}
-  \montserratBold\textbf{#1}\xspace}
+  {\fontsize{7.4pt}{9pt}\selectfont
+  \montserratBold\addfontfeatures{LetterSpace=2.0}\textbf{#1}\xspace}
 }
 
 \newcommand{\experiencetitle}[1]{%
   {\fontsize{7pt}{11.2pt}\selectfont
-  \addfontfeatures{LetterSpace=3.0}
   \bfseries
-  \montserratBold\textbf{#1}\xspace}
+  \montserratBold\addfontfeatures{LetterSpace=3.0}\textbf{#1}\xspace}
 }
 
 \newcommand{\para}[1]{%
@@ -129,14 +127,14 @@
   \end{tabularx}%
 }
 \newcommand{\sectioncontainer}[2]{%
-  \sectiontitle{#1}\\[1.1ex]
+  \sectiontitle{#1}\\[1ex]
   \begin{minipage}{\linewidth}%
 	#2%
   \end{minipage}
 }
 \newcommand{\sectioncontainerrow}[2]{%
 \begin{minipage}[t]{\dimexpr\linewidth/2\relax}%
-  \begin{tabular}{@{}p{60pt}l@{}}%
+  \begin{tabular}{@{}p{56pt}l@{}}%
     \sectiontitle{\color{customblack}#1} & #2%
   \end{tabular}%
 \end{minipage}
@@ -191,11 +189,11 @@
 \begin{document}
 
 \begin{center}
-	\linespread{1.1}\selectfont
+	\linespread{1}\selectfont
 	\resumetitle{Mohamed Amine SAYAGH}\\
-	\resumeprofession{\color{customgray}SOFTWARE DEVELOPER}\\[0.2ex]
+	\resumeprofession{\color{customgray}FULL STACK DEVELOPER}\\
 \end{center}
-\setlength{\columnsep}{0.9cm} % Adjust this value as needed
+\setlength{\columnsep}{0.9cm}{\raggedcolumns}{\renewcommand{\arraystretch}{1.1}
 \raggedcolumns% Reduce the margin on each column
 \renewcommand{\arraystretch}{1.1} % Adjust this value to increase/decrease line spacing
 \begin{multicols}{3}
@@ -264,45 +262,49 @@
 \customcol{Cloud Services}{\para{\color{customgray}Cloudflare}\skill{Google Cloud}\skill{AWS}\skill{Oracle Cloud}\skill{Github Codespace}\skill{Heroku}\skill{Vercel}}
 \customcol{Containerization and Orchestration}{\para{\color{customgray}Docker}\skill{Docker Compose}\skill{Kubernetes}\skill{NGINX}}
 \customcol{Programming Languages}{\para{\color{customgray}JavaScript / TypeScript}\skill{PHP}\skill{Golang}\skill{SQL}\skill{BASH}}
-\customcol{Front-end / Back-end}{\para{\color{customgray}Vue/Nuxt}\skill{React/Next.js}\skill{Express}\skill{Nest}\skill{Tailwind}\skill{Dom}\skill{State Management: Redux\...}\skill{Tanstack}\skill{Next Turbo}\lang{Firebase}\lang{Kafka}\lang{Elastic Search}}
-\customcol{Architecture, Protocols, and Integration}{\para{\color{customgray}RESTful API}\skill{OAuth v2}\skill{GraphQL}\skill{WebSocket}\skill{Webhook}}
+\customcol{Front-end / Back-end}{\para{\color{customgray}Vue/Nuxt}\skill{React/Next.js}\skill{Express}\skill{Nest}\skill{Tailwind}\skill{Dom}\skill{State Management: Redux\...}\skill{Tanstack}\skill{Next Turbo}\skill{Firebase}\skill{Kafka}\skill{Elastic Search}}
+% \customcol{Architecture, Protocols, and Integration}{\para{\color{customgray}RESTful API}\skill{OAuth v2}\skill{GraphQL}\skill{WebSocket}\skill{Webhook}}
 \customcol{Database}{\para{\color{customgray}MySQL}\skill{MongoDB}\skill{PostgreSQL}\skill{Redis}}
+\customcol{Content Management System}{\para{\color{customgray}Shopify}\skill{WordPress}\skill{Strapi}\skill{Headless CMS}}
 \customcol{Version Control and CI/CD}{\para{\color{customgray}Git}\skill{GitHub}\skill{GitHub Action}}
 \customcol{Testing Practices}{\para{\color{customgray}Unit Testing (Jest)}\skill{Functional Testing (Cypress)}\skill{Regression Testing (Puppeteer)}\skill{Integration Testing (Supertest, Postman)}}
 \customcol{Artificial Intelligence}{\para{\color{customgray}Open AI}\skill{ChatGPT-4}\skill{Copilot}\skill{Midjourney}\skill{RAG}\skill{LangChain}}
 \customcol{Methodology and Standards}{\para{\color{customgray}Agile}\skill{SOLID}\skill{Design Pattern}\skill{Clean Code}\skill{Distributive System}\skill{Serverless}}
 \customcol{Design}{\para{\color{customgray}UI/UX}\skill{Design thinking}\skill{Photoshop}\skill{Illustrator}\skill{Figma}}
-\customcol{Content Management System}{\para{\color{customgray}Shopify}\skill{WordPress}\skill{Strapi}\skill{Headless CMS}}
 }\\[1.4ex]
 \sectioncontainer{PROJECTS}{
 	\begingroup
 	\customcol{\experiencetitle{\color{customblack}Realtime Dashboard}}{\paraitalic{\color{customgray}06/2024 \- 08/2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Dashboard-Real-time}{View the project repository}}}}
 	\begin{myitemize}
-		\item \para{\color{customgray}Developed a monolithic web application, containerized for a distributive system deployment, staged on a CI/CD testing process (within 2 weeks).}
-		\item \para{\color{customgray}Ensured Quality Assurance of the pipeline by implementing a cache build of the containers from multistage, followed standardized database solutions like Redis cache, indexation, and schema optimization (within 2 months).}
-		\item \para{\color{customgray}Designed a database solution to abstract labeling needs of a scholar domain, resulting in a streamlined structure with 17 collections (within 1 week).}
+		\item \para{\color{customgray}Developed a monolithic web application, \str{containerized} for a distributive system deployment, staged on a CI/CD testing process (within 2 weeks).}
+		\item \para{\color{customgray}Ensured \str{Quality Assurance} of the pipeline by implementing a cache build of the containers from multistage, integrated standardized database solutions like \str{Redis cache}, \str{indexation, and schema optimization} (within 2 months).}
+		\item \para{\color{customgray}Designed a database solution to \str{abstract labeling needs} of a scholar domain, resulting in a streamlined structure with 17 collections (within 1 week).}
 	\end{myitemize}
 	\endgroup
 	\vspace{0.6em}
 	\begingroup
 	\customcol{\experiencetitle{\color{customblack}Zec: Data Parsing Library}}{\paraitalic{\color{customgray}05/2024 \-- 07/2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Zec-Data-Parsing.git}{View the project documentation}}}}
 	\begin{myitemize}
-		\item \para{\color{customgray}Developed a PHP open-source library for data parsing and serialization by leveraging schema definition and modular, extensible configuration management.}
-		\item \para{\color{customgray}Ensured the library's reliability and ease of use through successful testing and comprehensive documentation.}
+		\item \para{\color{customgray}Developed a PHP open-source library for \str{data parsing and serialization} by leveraging schema definition and modular, \str{extensible configuration management.}}
+		\item \para{\color{customgray}Ensured the library's \str{reliability and ease of use} through successful testing and comprehensive documentation.}
 	\end{myitemize}
 	\endgroup
 	\vspace{0.6em}
 	\begingroup
 	\customcol{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane Pamart}}{\paraitalic{\color{customgray}07/2021 \-- One week}}
 	\begin{myitemize}
-		\item \para{\color{customgray}Collaborated in a 140-member team, including 40 developers led by Oussama Ommar, to develop visual NFTs for artist Sofiane Pamart, achieving successful project launch within one week.}
+		\item \para{\color{customgray}Collaborated in a \str{140-member team}, including \str{42 developers} led by Oussama Ommar, to develop visual NFTs for artist Sofiane Pamart, achieving successful project launch within one week.}
 	\end{myitemize}
 	\endgroup
 }\\[1.6ex]
 \sectioncontainer{EDUCATION}{
 	\customcol{\para{\color{customblack}Master's in Big Data \& Cloud Computing}}{\para{\color{customgray}University of Hassan II, Casablanca, since 2023}}\\
 	\customcol{\para{\color{customblack}Bachelor's in Computer Science}}{\para{\color{customgray}University of Hassan II, Casablanca, 2022 \-- 2023}}%
-}\\[1.4ex]
-\sectioncontainerrow{REFERENCES}{\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}}\\[0.5ex]
+}\\[1ex]
+\sectioncontainerrow{REFERENCES}{\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}}\\[0.2ex]
+\sectioncontainerrow{ACHIEVEMENTS}{%
+	\customlink{https://lavish.masayagh.com/}{Lavish Trading}\customball{\customlink{https://happy-water.masayagh.com/}{Happy Water}}\customball{\customlink{https://coreas-ht.com/}{Coreas}}\customball{\customlink{https://www.greening-energy.com/}{Greening Energy}}\customball{\customlink{https://horde-studio.masayagh.com/}{Horde Studio}}\customball{\customlink{https://www.cybercohesions.com/}{Cyber Cohesion}}\customball{\customlink{https://www.figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma Portfolio}}
+}\\[0.2ex]
 \sectioncontainerdoublerow{LANGUAGES}{\para{\color{customgray}English}\customball{\para{\color{customgray}French}}\customball{\para{\color{customgray}Arabic}}}{ACTIVITIES}{\para{\color{customgray}Tech Writing (see\customlink{https://www.linkedin.com/in/mohamedamine-sayagh/recent-activity/all/}{LinkedIn}or\customlink{https://medium.com/@masayagh}{Medium})}\customball{\para{\color{customgray}Open Source Contributor}}\customball{\para{\color{customgray}Tech Mentoring}}}
+
 \end{document}
