@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.8.22)  26 AUG 2024 16:45
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.8.22)  26 AUG 2024 17:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -489,36 +489,37 @@ ript=latn;language=dflt;+smcp;mapping=tex-text;"
 LaTeX Font Info:    Font shape `TU/Montserrat(1)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 53.
 \enitdp@myitemize=\count306
-Package hyperref Info: Option `colorlinks' set `true' on input line 184.
+Package hyperref Info: Option `colorlinks' set `true' on input line 188.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 188.
  (./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 194.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-89.
+94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -554,11 +555,11 @@ LaTeX Font Info:    ... okay on input line 189.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 189.
-Package microtype Info: Applying patch `item' on input line 189.
-Package microtype Info: Applying patch `toc' on input line 189.
-Package microtype Info: Applying patch `eqnum' on input line 189.
-Package microtype Info: Applying patch `footnote' on input line 189.
+LaTeX Info: Redefining \microtypecontext on input line 194.
+Package microtype Info: Applying patch `item' on input line 194.
+Package microtype Info: Applying patch `toc' on input line 194.
+Package microtype Info: Applying patch `eqnum' on input line 194.
+Package microtype Info: Applying patch `footnote' on input line 194.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -568,7 +569,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Montserrat' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring ON on input line 189.
+Package hyperref Info: Link coloring ON on input line 194.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -580,9 +581,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count307
 )
-LaTeX Info: Redefining \ref on input line 189.
-LaTeX Info: Redefining \pageref on input line 189.
-LaTeX Info: Redefining \nameref on input line 189.
+LaTeX Info: Redefining \ref on input line 194.
+LaTeX Info: Redefining \pageref on input line 194.
+LaTeX Info: Redefining \nameref on input line 194.
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
@@ -596,67 +597,67 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 189.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 189.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 189.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 189.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 189.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 189.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 189.
-LaTeX Font Info:    Redeclaring math accent \check on input line 189.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 189.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 189.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 189.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 189.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 194.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 194.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 194.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 194.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 194.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 194.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 194.
+LaTeX Font Info:    Redeclaring math accent \check on input line 194.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 194.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 194.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 194.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 194.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 189.
+(Font)              `operators' in the math version `normal' on input line 194.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Montserrat(1)/m/n on input line 189.
+(Font)                  OT1/cmr/m/n --> TU/Montserrat(1)/m/n on input line 194.
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 189.
+(Font)              `operators' in the math version `bold' on input line 194.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Montserrat(1)/m/n on input line 189
+(Font)                  OT1/cmr/bx/n --> TU/Montserrat(1)/m/n on input line 194
 .
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/Montserrat(1)/m/n --> TU/Montserrat(1)/m/n on input 
-line 189.
+line 194.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Montserrat(1)/m/it on input line 18
-9.
+(Font)                  OT1/cmr/m/it --> TU/Montserrat(1)/m/it on input line 19
+4.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Montserrat(1)/b/n on input line 189
+(Font)                  OT1/cmr/bx/n --> TU/Montserrat(1)/b/n on input line 194
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 189.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 194.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 189.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 194.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/Montserrat(1)/m/n --> TU/Montserrat(1)/b/n on input 
-line 189.
+line 194.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/Montserrat(1)/b/it on input line 1
-89.
+94.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 189.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 194.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 189.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 194.
 LaTeX Font Info:    Font shape `TU/Montserrat(1)/m/n' will be
-(Font)              scaled to size 11.0pt on input line 193.
+(Font)              scaled to size 11.0pt on input line 198.
 
 Package fontspec Info: Font family 'Montserrat(2)' created for font
 (fontspec)             'Montserrat' with options [Ligatures=TeX,Path =
@@ -695,13 +696,13 @@ ript=latn;language=dflt;letterspace=12.0;mapping=tex-text;"
 ript=latn;language=dflt;letterspace=12.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(2)/m/n' will be
-(Font)              scaled to size 11.0pt on input line 193.
+(Font)              scaled to size 11.0pt on input line 198.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/m/n' will be
-(Font)              scaled to size 11.0pt on input line 193.
+(Font)              scaled to size 11.0pt on input line 198.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/b/n' will be
-(Font)              scaled to size 11.0pt on input line 193.
+(Font)              scaled to size 11.0pt on input line 198.
 LaTeX Font Info:    Font shape `TU/Montserrat(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 194.
+(Font)              scaled to size 7.0pt on input line 199.
 
 Package fontspec Info: Font family 'Montserrat(3)' created for font
 (fontspec)             'Montserrat' with options [Ligatures=TeX,Path =
@@ -740,7 +741,7 @@ ript=latn;language=dflt;letterspace=32.0;mapping=tex-text;"
 ript=latn;language=dflt;letterspace=32.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(3)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 194.
+(Font)              scaled to size 7.0pt on input line 199.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
 
 Package fontspec Info: Font family 'Montserrat(4)' created for font
@@ -780,11 +781,11 @@ ript=latn;language=dflt;letterspace=1.0;mapping=tex-text;"
 ript=latn;language=dflt;letterspace=1.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(1)/m/n' will be
-(Font)              scaled to size 7.4pt on input line 215.
+(Font)              scaled to size 7.4pt on input line 220.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/m/n' will be
-(Font)              scaled to size 7.4pt on input line 215.
+(Font)              scaled to size 7.4pt on input line 220.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 215.
+(Font)              scaled to size 10.95pt on input line 220.
 
 Package fontspec Info: Font family 'Montserrat(5)' created for font
 (fontspec)             'Montserrat' with options [Path = ./fonts/,Extension =
@@ -822,15 +823,15 @@ pt=latn;language=dflt;letterspace=2.0;+smcp;mapping=tex-text;"
 =latn;language=dflt;letterspace=2.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(5)/m/n' will be
-(Font)              scaled to size 7.4pt on input line 215.
+(Font)              scaled to size 7.4pt on input line 220.
 LaTeX Font Info:    Font shape `TU/Montserrat(5)/b/n' will be
-(Font)              scaled to size 7.4pt on input line 215.
+(Font)              scaled to size 7.4pt on input line 220.
 LaTeX Font Info:    Font shape `TU/Montserrat(1)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 260.
+(Font)              scaled to size 7.0pt on input line 265.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 260.
+(Font)              scaled to size 7.0pt on input line 265.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 260.
+(Font)              scaled to size 10.95pt on input line 265.
 
 Package fontspec Info: Font family 'Montserrat(6)' created for font
 (fontspec)             'Montserrat' with options [Path = ./fonts/,Extension =
@@ -868,7 +869,7 @@ pt=latn;language=dflt;letterspace=3.0;+smcp;mapping=tex-text;"
 =latn;language=dflt;letterspace=3.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(6)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 260.
+(Font)              scaled to size 7.0pt on input line 265.
 
 Package fontspec Info: Font family 'Montserrat(7)' created for font
 (fontspec)             'Montserrat' with options [Ligatures=TeX,Path =
@@ -907,9 +908,9 @@ ript=latn;language=dflt;letterspace=4.0;mapping=tex-text;"
 ript=latn;language=dflt;letterspace=4.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(7)/m/n' will be
-(Font)              scaled to size 6.1pt on input line 260.
+(Font)              scaled to size 6.1pt on input line 265.
 LaTeX Font Info:    Font shape `TU/Montserrat(7)/m/it' will be
-(Font)              scaled to size 6.1pt on input line 260.
+(Font)              scaled to size 6.1pt on input line 265.
 
 Package fontspec Info: Font family 'Montserrat(8)' created for font
 (fontspec)             'Montserrat' with options [Ligatures=TeX,Path =
@@ -949,19 +950,19 @@ ript=latn;language=dflt;letterspace=1.0;letterspace=1.0;+smcp;mapping=tex-text;
 "
 
 
-Overfull \hbox (7.58809pt too wide) in paragraph at lines 307--307
+Overfull \hbox (7.58809pt too wide) in paragraph at lines 312--312
 []|[]\TU/Montserrat(5)/b/n/7.4 ACHIEVEMENTS[]| 
  []
 
 
-Overfull \hbox (196.55275pt too wide) in paragraph at lines 307--307
+Overfull \hbox (178.41954pt too wide) in paragraph at lines 312--312
 [][] 
  []
 
 LaTeX Font Info:    Font shape `TU/Montserrat(8)/b/it' will be
-(Font)              scaled to size 6.1pt on input line 308.
+(Font)              scaled to size 6.1pt on input line 313.
 
-Overfull \hbox (236.0pt too wide) in paragraph at lines 215--309
+Overfull \hbox (236.0pt too wide) in paragraph at lines 220--314
 [] 
  []
 
@@ -984,7 +985,7 @@ Package rerunfilecheck Info: Checksums for `resume.out':
 Here is how much of TeX's memory you used:
  15094 strings out of 478190
  303792 string characters out of 5854813
- 760244 words of memory out of 5000000
+ 760198 words of memory out of 5000000
  35478 multiletter control sequences out of 15000+600000
  472886 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

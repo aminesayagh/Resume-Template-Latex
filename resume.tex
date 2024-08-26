@@ -100,10 +100,12 @@
 \definecolor{customwhite}{HTML}{F4F4F4}
 \definecolor{customblue}{HTML}{6A5EEF}
 
-\newcommand{\customlink}[2]{\href{#1}{\colorbox{customwhite}{\linkfont{#2}}}}
 
+\newcommand{\customlink}[2]{%
+  \href{#1}{\colorbox{customwhite}{\linkfont{#2}}}%
+}
 \newcommand{\customball}[1]{%
-\raisebox{-0.12ex}{\textbullet}\hspace{3pt}{#1}
+\raisebox{-0.12ex}{\textbullet}\hspace{3pt}{#1}%
 }
 \newcommand{\customballopara}[2]{%
 \raisebox{-0.12ex}{\textbullet}\hspace{3pt}{%
@@ -178,10 +180,13 @@
     linkcolor=customblue,
     citecolor=customblack,
     filecolor=customblack,
+	pdfnewwindow=true,
+	pdfstartview={XYZ null null 1}
     pdftitle={Mohamed Amine SAYAGH \-- Resume},
     pdfauthor={Mohamed Amine SAYAGH},
     pdfsubject={Resume},
 }
+
 
 \pagestyle{empty}
 \linespread{0.8}
