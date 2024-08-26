@@ -55,44 +55,19 @@
 \geometry{left=0.8cm, right=0.8cm, top=0.8cm, bottom=0.8cm}
 
 % Custom commands
-\newcommand{\resumetitle}[1]{%
-  {\fontsize{11pt}{14pt}\selectfont
-  \addfontfeatures{LetterSpace=12.0}
-  \montserratBold\textbf{#1}\xspace}
-}
+\newcommand{\resumetitle}[1]{{\fontsize{11pt}{14pt}\selectfont\addfontfeatures{LetterSpace=12.0}\montserratBold\textbf{#1}\xspace}}
 
-\newcommand{\resumeprofession}[1]{%
-  {\fontsize{7pt}{10.8pt}\selectfont
-  \addfontfeatures{LetterSpace=32.0}
-  #1\xspace}
-}
+\newcommand{\resumeprofession}[1]{{\fontsize{7pt}{10.8pt}\selectfont\addfontfeatures{LetterSpace=32.0}#1\xspace}}
 
-\newcommand{\sectiontitle}[1]{%
-  {\fontsize{7.4pt}{9pt}\selectfont
-  \montserratBold\addfontfeatures{LetterSpace=2.0}\textbf{#1}\xspace}
-}
+\newcommand{\sectiontitle}[1]{{\fontsize{7.4pt}{9pt}\selectfont\montserratBold\addfontfeatures{LetterSpace=2.0}\textbf{#1}\xspace}}
 
-\newcommand{\experiencetitle}[1]{%
-  {\fontsize{7pt}{11.2pt}\selectfont
-  \bfseries
-  \montserratBold\addfontfeatures{LetterSpace=3.0}\textbf{#1}\xspace}
-}
+\newcommand{\experiencetitle}[1]{{\fontsize{7pt}{11.2pt}\selectfont\bfseries\montserratBold\addfontfeatures{LetterSpace=3.0}\textbf{#1}\xspace}}
 
-\newcommand{\para}[1]{%
-  {\fontsize{6.1pt}{10.492pt}\selectfont 
-  \addfontfeatures{LetterSpace=1.0} 
-  \textbf{#1}\xspace} 
-}
+\newcommand{\para}[1]{{\fontsize{6.1pt}{10.492pt}\selectfont\addfontfeatures{LetterSpace=1.0}\textbf{#1}\xspace}}
 
-\newcommand{\paraitalic}[1]{%
-  {\fontsize{6.1pt}{10.492pt}\selectfont
-  \addfontfeatures{LetterSpace=4.0}
-  \textit{#1}\xspace}
-}
+\newcommand{\paraitalic}[1]{{\fontsize{6.1pt}{10.492pt}\selectfont\addfontfeatures{LetterSpace=4.0}\textit{#1}\xspace}}
 
-\newcommand{\linkfont}[1]{%
-  {\fontsize{6.1pt}{10.492pt}\selectfont\addfontfeatures{LetterSpace=1.0}\textit{\underline{#1}}\xspace}%
-}
+\newcommand{\linkfont}[1]{{\fontsize{6.1pt}{10.492pt}\selectfont\addfontfeatures{LetterSpace=1.0}\textit{\underline{#1}}\xspace}}
 
 % Custom colors
 \definecolor{customblack}{HTML}{111517}
@@ -101,25 +76,13 @@
 \definecolor{customblue}{HTML}{6A5EEF}
 
 
-\newcommand{\customlink}[2]{%
-  \href{#1}{\colorbox{customwhite}{\linkfont{#2}}}%
-}
-\newcommand{\customball}[1]{%
-\raisebox{-0.12ex}{\textbullet}\hspace{3pt}{#1}%
-}
-\newcommand{\customballopara}[2]{%
-\raisebox{-0.12ex}{\textbullet}\hspace{3pt}{%
-\para{\color{#1}#2}%
-}
-}
-\newcommand{\skill}[1]{%
-\hspace{0pt}\raisebox{-0.12ex}{\textbullet}\hspace{3pt}%
-{\para{\color{customgray}#1}}%
-}
-\newcommand{\lang}[1]{%
-\raisebox{-0.12ex}{\textbullet}\hspace{3pt}%
-{\para{\color{customblack}#1}}%
-}
+\newcommand{\customlink}[2]{\href{#1}{\colorbox{customwhite}{\linkfont{#2}}}}
+\newcommand{\customball}[1]{\hspace{3pt}\raisebox{-0.12ex}{\textcolor{customgray}{\textbullet}}\hspace{3pt}{#1}}
+\newcommand{\customballopara}[2]{\hspace{3pt}\raisebox{-0.12ex}{\textcolor{customgray}{\textbullet}\hspace{3pt}{\para{\color{#1}#2}}}}
+
+\newcommand{\skill}[1]{\hspace{3pt}\raisebox{-0.12ex}{\textcolor{customgray}{\textbullet}\hspace{3pt}{\para{\color{customgray}#1}}}}
+\newcommand{\lang}[1]{\hspace{3pt}\raisebox{-0.12ex}{\textbullet}\hspace{3pt}{\para{\color{customblack}#1}}}
+
 \newcommand{\str}[1]{%
   {\color{customblack}\textbf{#1}}%
 }
@@ -267,8 +230,7 @@
 \customcol{Cloud Services}{\para{\color{customgray}Cloudflare}\skill{Google Cloud}\skill{AWS}\skill{Oracle Cloud}\skill{Github Codespace}\skill{Heroku}\skill{Vercel}}
 \customcol{Containerization and Orchestration}{\para{\color{customgray}Docker}\skill{Docker Compose}\skill{Kubernetes}\skill{NGINX}}
 \customcol{Programming Languages}{\para{\color{customgray}JavaScript / TypeScript}\skill{PHP}\skill{Golang}\skill{SQL}\skill{BASH}}
-\customcol{Front-end / Back-end}{\para{\color{customgray}Vue/Nuxt}\skill{React/Next.js}\skill{Express}\skill{Nest}\skill{Tailwind}\skill{Dom}\skill{State Management: Redux\...}\skill{Tanstack}\skill{Next Turbo}\skill{Firebase}\skill{Kafka}\skill{Elastic Search}}
-% \customcol{Architecture, Protocols, and Integration}{\para{\color{customgray}RESTful API}\skill{OAuth v2}\skill{GraphQL}\skill{WebSocket}\skill{Webhook}}
+\customcol{Front-end / Back-end}{\para{\color{customgray}Vue/Nuxt}\skill{React/Next.js}\skill{Express}\skill{Nest}\skill{Tailwind}\skill{Dom}\skill{State Management: Redux\...}\skill{Tanstack}\skill{pnpm monorepo}\skill{Next Turbo}\skill{Firebase}\skill{Kafka}\skill{Elastic Search}}
 \customcol{Database}{\para{\color{customgray}MySQL}\skill{MongoDB}\skill{PostgreSQL}\skill{Redis}}
 \customcol{Content Management System}{\para{\color{customgray}Shopify}\skill{WordPress}\skill{Strapi}\skill{Headless CMS}}
 \customcol{Version Control and CI/CD}{\para{\color{customgray}Git}\skill{GitHub}\skill{GitHub Action}}
@@ -306,10 +268,15 @@
 	\customcol{\para{\color{customblack}Master's in Big Data \& Cloud Computing}}{\para{\color{customgray}University of Hassan II, Casablanca, since 2023}}\\
 	\customcol{\para{\color{customblack}Bachelor's in Computer Science}}{\para{\color{customgray}University of Hassan II, Casablanca, 2022 \-- 2023}}%
 }\\[1ex]
-\sectioncontainerrow{REFERENCES}{\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}}\\[0.2ex]
+\sectioncontainerrow{REFERENCES}{\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}}\\[0.3ex]
 \sectioncontainerrow{ACHIEVEMENTS}{%
-	\customlink{https://lavish.masayagh.com/}{Lavish Trading}\customball{\customlink{https://happy-water.masayagh.com/}{Happy Water}}\customball{\customlink{https://coreas-ht.com/}{Coreas}}\customball{\customlink{https://www.greening-energy.com/}{Greening Energy}}\customball{\customlink{https://hordestudio.com/}{Horde Studio}}\customball{\customlink{https://www.cybercohesions.com/}{Cyber Cohesion}}\customball{\customlink{https://www.figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma Portfolio}}
-}\\[0.2ex]
+    \customlink{https://lavish.masayagh.com/}{Lavish Trading}%
+    \customball{\customlink{https://happy-water.masayagh.com/}{Happy Water}}%
+    \customball{\customlink{https://coreas-ht.com/}{Coreas}}%
+    \customball{\customlink{https://www.greening-energy.com/}{Greening Energy}}%
+    \customball{\customlink{https://hordestudio.com/}{Horde Studio}}%
+    \customball{\customlink{https://www.cybercohesions.com/}{Cyber Cohesion}}%
+    \customball{\customlink{https://www.figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma Portfolio}}%
+}\\[0.3ex]
 \sectioncontainerdoublerow{LANGUAGES}{\para{\color{customgray}English}\customball{\para{\color{customgray}French}}\customball{\para{\color{customgray}Arabic}}}{ACTIVITIES}{\para{\color{customgray}Tech Writing (see\customlink{https://www.linkedin.com/in/mohamedamine-sayagh/recent-activity/all/}{LinkedIn}or\customlink{https://medium.com/@masayagh}{Medium})}\customball{\para{\color{customgray}Open Source Contributor}}\customball{\para{\color{customgray}Tech Mentoring}}}
-
 \end{document}
