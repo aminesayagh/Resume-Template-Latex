@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.8.22)  26 AUG 2024 16:38
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.8.22)  26 AUG 2024 16:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -490,8 +490,7 @@ LaTeX Font Info:    Font shape `TU/Montserrat(1)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 53.
 \enitdp@myitemize=\count306
 Package hyperref Info: Option `colorlinks' set `true' on input line 184.
-
-No file resume.aux.
+ (./resume.aux)
 \openout1 = `resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
@@ -505,6 +504,7 @@ LaTeX Font Info:    ... okay on input line 189.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 89.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -980,18 +980,14 @@ Package rerunfilecheck Warning: File `resume.out' has changed.
 Package rerunfilecheck Info: Checksums for `resume.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 196 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 15092 strings out of 478190
- 303770 string characters out of 5854813
- 760296 words of memory out of 5000000
+ 15094 strings out of 478190
+ 303792 string characters out of 5854813
+ 760244 words of memory out of 5000000
  35478 multiletter control sequences out of 15000+600000
  472886 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 73i,13n,88p,1003b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,13n,88p,1003b,608s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
