@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1724876475 "/root/git/latex/resume.tex" "resume.pdf" "resume" 1724876475
+["pdflatex"] 1724876847 "/root/git/latex/resume.tex" "resume.pdf" "resume" 1724876847
   "/etc/texmf/web2c/texmf.cnf" 1724704408 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/root/git/latex/resume.tex" 1724876474 15460 4f4602a334380b931a1fdfe0e16b7d42 ""
+  "/root/git/latex/resume.tex" 1724876846 15407 a0b4973c8c10f50f45d3cd8a2b56ec7c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -57,8 +57,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724310893 1405654 a309c58d8cbc228783e6333ff0b1467f ""
-  "resume.aux" 1724876475 32 3985256e7290058c681f74d7a3565a19 ""
-  "resume.tex" 1724876474 15460 4f4602a334380b931a1fdfe0e16b7d42 ""
+  "resume.aux" 1724876847 32 3985256e7290058c681f74d7a3565a19 ""
+  "resume.tex" 1724876846 15407 a0b4973c8c10f50f45d3cd8a2b56ec7c ""
   (generated)
   "resume.log"
   "resume.pdf"
