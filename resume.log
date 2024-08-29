@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.8.22)  29 AUG 2024 13:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.8.22)  29 AUG 2024 13:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -584,12 +584,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 158.
 LaTeX Info: Redefining \pageref on input line 158.
 LaTeX Info: Redefining \nameref on input line 158.
+
+(./resume.out) (./resume.out)
 \@outlinefile=\write3
 \openout3 = `resume.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -742,6 +740,7 @@ ript=latn;language=dflt;letterspace=32.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(3)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 163.
+
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
 
 Package fontspec Info: Font family 'Montserrat(4)' created for font
@@ -978,22 +977,13 @@ Overfull \hbox (236.0pt too wide) in paragraph at lines 184--291
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.95pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `resume.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15111 strings out of 478190
- 304094 string characters out of 5854813
- 765790 words of memory out of 5000000
+ 15115 strings out of 478190
+ 304138 string characters out of 5854813
+ 766171 words of memory out of 5000000
  35495 multiletter control sequences out of 15000+600000
  472886 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
