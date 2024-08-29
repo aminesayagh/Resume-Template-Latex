@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.8.22)  28 AUG 2024 20:28
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.8.22)  29 AUG 2024 13:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -827,11 +827,11 @@ LaTeX Font Info:    Font shape `TU/Montserrat(5)/m/n' will be
 LaTeX Font Info:    Font shape `TU/Montserrat(5)/b/n' will be
 (Font)              scaled to size 7.4pt on input line 184.
 LaTeX Font Info:    Font shape `TU/Montserrat(1)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 229.
+(Font)              scaled to size 7.0pt on input line 233.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 229.
+(Font)              scaled to size 7.0pt on input line 233.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 229.
+(Font)              scaled to size 10.95pt on input line 233.
 
 Package fontspec Info: Font family 'Montserrat(6)' created for font
 (fontspec)             'Montserrat' with options [Path = ./fonts/,Extension =
@@ -869,7 +869,7 @@ pt=latn;language=dflt;letterspace=3.0;+smcp;mapping=tex-text;"
 =latn;language=dflt;letterspace=3.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(6)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 229.
+(Font)              scaled to size 7.0pt on input line 233.
 
 Package fontspec Info: Font family 'Montserrat(7)' created for font
 (fontspec)             'Montserrat' with options [Ligatures=TeX,Path =
@@ -908,11 +908,11 @@ ript=latn;language=dflt;letterspace=4.0;mapping=tex-text;"
 ript=latn;language=dflt;letterspace=4.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(7)/m/n' will be
-(Font)              scaled to size 6.1pt on input line 229.
+(Font)              scaled to size 6.1pt on input line 233.
 LaTeX Font Info:    Font shape `TU/Montserrat(7)/m/it' will be
-(Font)              scaled to size 6.1pt on input line 229.
+(Font)              scaled to size 6.1pt on input line 233.
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
 []| []\TU/Montserrat(4)/b/n/6.1 Vue/Nuxt[] [] [] [] [] [] [] []
  []
 
@@ -955,19 +955,19 @@ ript=latn;language=dflt;letterspace=1.0;letterspace=1.0;+smcp;mapping=tex-text;
 "
 
 
-Overfull \hbox (7.58809pt too wide) in paragraph at lines 280--280
+Overfull \hbox (7.58809pt too wide) in paragraph at lines 289--289
 []|[]\TU/Montserrat(5)/b/n/7.4 ACHIEVEMENTS[]| 
  []
 
 
-Overfull \hbox (196.41954pt too wide) in paragraph at lines 280--280
+Overfull \hbox (196.41954pt too wide) in paragraph at lines 289--289
 [][] 
  []
 
 LaTeX Font Info:    Font shape `TU/Montserrat(8)/b/it' will be
-(Font)              scaled to size 6.1pt on input line 281.
+(Font)              scaled to size 6.1pt on input line 290.
 
-Overfull \hbox (236.0pt too wide) in paragraph at lines 184--282
+Overfull \hbox (236.0pt too wide) in paragraph at lines 184--291
 [] 
  []
 
@@ -979,6 +979,9 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.95pt have occurred.
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package rerunfilecheck Warning: File `resume.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
@@ -988,10 +991,10 @@ Package rerunfilecheck Info: Checksums for `resume.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15095 strings out of 478190
- 303802 string characters out of 5854813
- 763976 words of memory out of 5000000
- 35479 multiletter control sequences out of 15000+600000
+ 15111 strings out of 478190
+ 304094 string characters out of 5854813
+ 765790 words of memory out of 5000000
+ 35495 multiletter control sequences out of 15000+600000
  472886 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  73i,13n,88p,1003b,608s stack positions out of 5000i,500n,10000p,200000b,80000s
