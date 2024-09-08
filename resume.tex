@@ -83,12 +83,18 @@
 \newcommand{\firstskill}[1]{\hspace{3pt}{\para{\color{customgray}#1}}}%
 \newcommand{\skill}[1]{\para{\color{customgray}#1}}%
 \newcommand{\lang}[1]{\paraitalic{\color{customblack}#1}}%
-\newcommand{\langseparator}{\hspace{2pt}\textcolor{customgray}{,}\hspace{2pt}}%
+\newcommand{\langseparator}{\hspace{2pt}\fontsize{5pt}{9pt}\textcolor{customgray}{,}\hspace{2pt}}%
 
 \newcommand{\str}[1]{%
   {\color{customblack}\textbf{#1}}%
 }
 \newcommand{\customcol}[2]{%
+  \begin{tabularx}{\linewidth}{@{}p{140pt}@{}X@{}}%
+    \para{\color{customblack}#1}&#2%
+  \end{tabularx}%
+}
+
+\newcommand{\customcolnarrow}[2]{%
   \begin{tabularx}{\linewidth}{@{}p{140pt}@{}X@{}}%
     \para{\color{customblack}#1}&#2%
   \end{tabularx}%
@@ -112,7 +118,7 @@
 \end{tabular}%
 }
 \newcommand{\experiencecontainer}[5]{%
-  \experiencetitle{#1}#2\\% title and location
+  \experiencetitle{#1}#2\\[0.2ex]% title and location
   #3% Engagements
   #4% Tasks
   #5% Skills
@@ -182,7 +188,7 @@
 \end{multicols}
 \sectioncontainer{SUMMARY OF EXPERIENCE}{%
 	\label{sec:summary}\para{\color{customgray}Committed software developer professional with over \str{7 years} of experience. Successfully led and delivered over \str{13 projects} for \str{international clients} across various industries, consistently enhancing process delivery and enabling personalized experiences at multiple stages.}
-}\\[1.4ex]
+}\\[1.8ex]
 \sectioncontainer{PROFESSIONAL EXPERIENCES}{%
 	\label{sec:experiences}%
 	\experiencecontainer{%
@@ -191,63 +197,81 @@
 	}{%
 		\para{\color{customgray}Security Community's Firm}
 	}{%
-		\para{\color{customgray}Research \& Development, Web Tech Lead, DevOps}\customball{\para{\color{customgray}Self-Employ, Singapore}}\customball{\paraitalic{\color{customgray}May 2023 \-- July 2024}}%
+		\para{\color{customgray}Research \& Development, Web Tech Lead, DevOps}\customball{\para{\color{customgray}Self-Employ, Singapore}}\customball{\paraitalic{\color{customgray}May 2023 \-- July 2024}}\vspace{0.14em}%
 	}{%
 		\begin{myitemize}
 			\item \para{\color{customgray}Architected and Designed the logical structure of a \str{Kubernetes-based Namespace} by implementing a \str{Golang RESTful API} serving data access for a security competitions domain, integrated with \str{Kubernetes controller-runtime}. Improved deployment isolation and \str{pipeline productivity} (within a 1-month, 3-member team cooperation).}%
 			\item \para{\color{customgray}Directed the development of \str{core software components} to build a \str{scalable microservice platform}. including automated process for improved maintainability and scalability. This resulted in \str{ease to maintain} platform with an ensured web security compliance (within a 7-month, 6-member team cooperation).}%
 			\item \para{\color{customgray}\str{Reduced server query response time} of a \str{No-SQL database} by 11\% through \str{database schema optimization} and \str{index refinement} (within 2 months).}%
-		\end{myitemize}
+		\end{myitemize}\vspace{0.14em}
 	}{%
 		\para{\color{customblack}Key Skills:}\hspace{2pt}\lang{Golang}\langseparator{}\lang{Bash}\langseparator{}\lang{Javascript / TypeScript}\langseparator{}\lang{PHP}\langseparator{}\skill{Docker \& Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{Nginx}\langseparator{}\skill{MongoDB}\langseparator{}\skill{MySQL}\langseparator{}\skill{Restful}\langseparator{}\skill{CI/CD pipeline development}
-	}\\[0.6ex]
+	}\\[0.8ex]
 	\experiencecontainer{%
 		\label{exp:jonasdigitalagency}%
 		\color{customblack}Jonas Digital Agency
 	}{%
 		\para{\color{customgray}Solar Digital Agency}
 	}{%
-		\para{\color{customgray}Full Stack Web Developer}\customball{\para{\color{customgray}Freelance, London}}\customball{\paraitalic{\color{customgray}July 2023 \-- On going}}%
+		\para{\color{customgray}Full Stack Web Developer}\customball{\para{\color{customgray}Freelance, London}}\customball{\paraitalic{\color{customgray}July 2023 \-- On going}}\vspace{0.14em}%
 	}{%
 		\begin{myitemize}
 			\item \para{\color{customgray}Deployed a \str{cloud-based production} based on \str{NGINX} for containerized applications. \str{Optimized deployment workflows} through \str{CI/CD pipelines}, ensured rigorous testing, and Facilitated a \str{sixfold reduction in project development time} (within 4 weeks of development, followed by 5 months of continuous improvement).}
 			\item \para{\color{customgray}Enhanced marketing impact by adding \str{data visualization} for key KPIs and achieving over \str{90\% performance on Google Speed Index} (continuous improvement, contributing within a 4-member sales team).}
 			\item \para{\color{customgray}Achieved 7 worldwide \str{full-stack projects}. Implemented \str{responsive designs}, integrated with \str{third-party APIs}, and Secured \str{client satisfaction} (across a 6-month period).}
-		\end{myitemize}
+		\end{myitemize}\vspace{0.14em}
 	}{%
 		\para{\color{customblack}Key Skills:}\hspace{2pt}\lang{JavaScript / TypeScript}\langseparator{}\lang{PHP}\langseparator{}\lang{Bash}\langseparator{}\skill{WebHook}\langseparator{}\skill{API Integration}\langseparator{}\skill{Restful API}\langseparator{}\skill{React}\langseparator{}\skill{Cloudflare}\langseparator{}\skill{Nginx}\langseparator{}\skill{Docker}\langseparator{}\skill{MySQL}\langseparator{}\skill{Unite Testing}\langseparator{}\skill{CI/CD}
-	}\\[0.6ex]
+	}\\[0.8ex]
 	\experiencecontainer{%
 		\label{exp:lavishtrading}%
 		\color{customblack}Lavish Trading
 	}{%
 		\para{\color{customgray}Investment Agency}
 	}{%
-		\para{\color{customgray}Full Stack Web Developer}\customball{\para{\color{customgray}Freelance, London}}\customball{\paraitalic{\color{customgray}May 2022 \-- July 2022}}%
+		\para{\color{customgray}Full Stack Web Developer}\customball{\para{\color{customgray}Freelance, London}}\customball{\paraitalic{\color{customgray}May 2022 \-- July 2022}}\vspace{0.14em}%
 	}{%
 		\begin{myitemize}
 			\item \para{\color{customgray}Developed a highly adaptable, \str{user friendly} single page web application by integrating \str{webhook and API integration} with a \str{PostgreSQL data center}, This solution supported a global project managing over \$100 million in active investments, leveraging 12 years of industry expertise.}
-		\end{myitemize}
+		\end{myitemize}\vspace{0.14em}
 	}{%
 		\para{\color{customblack}Key Skills:}\hspace{2pt}\lang{JavaScript / TypeScript}\langseparator{}\lang{Next.js}\langseparator{}\lang{Vercel}\langseparator{}\skill{SMTP server}\langseparator{}\skill{JS Web Workers}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{API Integration}\langseparator{}\skill{Figma}\langseparator{}\skill{Google Tag Manager}
 	}%
-}\\[1.4ex]
+}\\[1.8ex]
 \sectioncontainer{SKILLS}{\label{sec:skills}
-	\customcol{Cloud Services}{\firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespace}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}}
-	\customcol{Containerization and Orchestration}{\firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}}
-	\customcol{Programming Languages}{\firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{BASH}}
-	\customcol{Front-end / Back-end}{\firstskill{Vue/Nuxt}\langseparator{}\skill{React/Next.js}\langseparator{}\skill{Express}\langseparator{}\skill{Nest}\langseparator{}\skill{Tailwind}\langseparator{}\skill{Dom}\langseparator{}\skill{State Management: Redux\...}\langseparator{}\skill{Tanstack}\langseparator{}\skill{WordPress, Headless WordPress}\langseparator{}\skill{Pnpm Monorepo}\langseparator{}\skill{Next Turbo}\skill{Firebase}\skill{Kafka}\skill{Elastic Search}}
-	\customcol{Database}{\firstskill{MySQL}\langseparator{}\skill{MongoDB}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{Redis}}
-	\customcol{Version Control and CI/CD}{\firstskill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Action}}
-	\customcol{Testing Practices}{\firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest, Postman)}}
-	\customcol{Artificial Intelligence}{\firstskill{Open AI}\langseparator{}\skill{ChatGPT-4}\langseparator{}\skill{Copilot}\langseparator{}\skill{Midjourney}\langseparator{}\skill{RAG}\langseparator{}\skill{LangChain}}
-	\customcol{Methodology and Standards}{\firstskill{Agile}\langseparator{}\skill{SOLID}\langseparator{}\skill{Design Pattern}\langseparator{}\skill{Clean Code}\langseparator{}\skill{Distributive System}\langseparator{}\skill{Serverless}}
-	\customcol{Design}{\firstskill{UI/UX}\langseparator{}\skill{Design thinking}\langseparator{}\skill{Photoshop}\langseparator{}\skill{Illustrator}\langseparator{}\skill{Figma}}
+	\customcol{Cloud Services}{%
+		\firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespace}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}
+	}
+	\customcol{Containerization and Orchestration}{%
+		\firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}
+	}
+	\customcol{Programming Languages}{%
+		\firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{BASH}
+	}
+	\customcolnarrow{Front-end / Back-end}{%
+		\firstskill{Vue/Nuxt}\langseparator{}\skill{React/Next.js}\langseparator{}\skill{Express}\langseparator{}\skill{Nest}\langseparator{}\skill{Tailwind}\langseparator{}\skill{Dom}\langseparator{}\skill{State\ Management:\ Redux\....}\langseparator{}\skill{Tanstack}
+	}
+	\customcolnarrow{}{%
+		\firstskill{WordPress, Headless WordPress}\langseparator{}\skill{Pnpm Monorepo}\langseparator{}\skill{Next Turbo}\langseparator{}\skill{Firebase}\langseparator{}\skill{Kafka}\langseparator{}\skill{Elastic Search}
+	}
+	\customcol{Database}{%
+		\firstskill{MySQL}\langseparator{}\skill{MongoDB}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{Redis}}
+	\customcol{Version Control and CI/CD}{%
+		\firstskill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Action}}
+	\customcol{Testing Practices}{%
+		\firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest, Postman)}}
+	\customcol{Artificial Intelligence}{%
+		\firstskill{Open AI}\langseparator{}\skill{ChatGPT-4}\langseparator{}\skill{Copilot}\langseparator{}\skill{Midjourney}\langseparator{}\skill{RAG}\langseparator{}\skill{LangChain}}
+	\customcol{Methodology and Standards}{%
+		\firstskill{Agile}\langseparator{}\skill{SOLID}\langseparator{}\skill{Design Pattern}\langseparator{}\skill{Clean Code}\langseparator{}\skill{Distributive System}\langseparator{}\skill{Serverless}}
+	\customcol{Design}{%
+		\firstskill{UI/UX}\langseparator{}\skill{Design thinking}\langseparator{}\skill{Photoshop}\langseparator{}\skill{Illustrator}\langseparator{}\skill{Figma}
+	}
 }\\[1.4ex]
 \sectioncontainer{PROJECTS}{\label{sec:projects}%
 	\begingroup%
 	\label{proj:realtime-dashboard}%
-	\customcol{\experiencetitle{\color{customblack}Realtime Dashboard}}{\paraitalic{\color{customgray}June 2024 \-- August 2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Dashboard-Real-time}{View the project repository}}}}
+	\customcol{\experiencetitle{\color{customblack}Realtime Dashboard}}{\paraitalic{\color{customgray}June 2024 \-- August 2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Dashboard-Real-time}{View the project repository}}}}\vspace{0.2em}
 	\begin{myitemize}
 		\item \para{\color{customgray}Developed a monolithic web application, \str{containerized} for a distributive system deployment, staged on a CI/CD testing process (within 2 weeks).}
 		\item \para{\color{customgray}Ensured \str{Quality Assurance} of the pipeline by implementing a cache build of the containers from multistage, Unified standardized database solutions like \str{Redis cache}, \str{indexation, and schema optimization} (within 2 months).}
@@ -257,7 +281,7 @@
 	\vspace{0.6em}
 	\begingroup%
 	\label{proj:zec}\label{proj:data-parsing-library}%
-	\customcol{\experiencetitle{\color{customblack}Zec: Data Parsing Library}}{\paraitalic{\color{customgray}May 2024 \-- July 2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Zec-Data-Parsing.git}{View the project documentation}}}}
+	\customcol{\experiencetitle{\color{customblack}Zec: Data Parsing Library}}{\paraitalic{\color{customgray}May 2024 \-- July 2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Zec-Data-Parsing.git}{View the project documentation}}}}\vspace{0.2em}
 	\begin{myitemize}
 		\item \para{\color{customgray}Authored a PHP open-source library for \str{data parsing and serialization} by leveraging schema definition and modular, \str{extensible configuration management.}}
 		\item \para{\color{customgray}Ensured the library's \str{reliability and ease of use} through successful testing and comprehensive documentation.}
@@ -274,10 +298,15 @@
 }\\[1.6ex]
 \sectioncontainer{EDUCATION}{%
 	\label{sec:education}%
+	\begingroup
 	\customcol{\para{\color{customblack}Master's in Big Data \& Cloud Computing}}{\para{\color{customgray}University of Hassan II, Casablanca, expected graduation 2025}}\\%
-	\customcol{\para{\color{customblack}Bachelor's in Computer Science}}{\para{\color{customgray}University of Hassan II, Casablanca, 2022 \-- 2023}}%
-}\\[1.6ex]%
-\sectioncontainerrow{APPROVALS}{\label{references}\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}}\\[0.3ex]%
+	\customcol{\para{\color{customblack}Bachelor's in Computer Science}}{\para{\color{customgray}University of Hassan II, Casablanca, 2022 \-- 2023}}\\%
+	\endgroup
+}\\
+\sectioncontainerrow{APPROVALS}{%
+	\label{references}%
+	\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}
+}\\[0.3ex]%
 \sectioncontainerrow{ACHIEVEMENTS}{%
 	\label{sec:achievement}%
 	\customlink{https://lavish.masayagh.com/}{Lavish Trading}%
