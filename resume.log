@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.27)  7 OCT 2024 19:36
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.27)  7 OCT 2024 19:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -938,18 +938,6 @@ LaTeX Font Info:    Font shape `TU/Montserrat(8)/m/n' will be
 LaTeX Font Info:    Font shape `TU/Montserrat(8)/m/it' will be
 (Font)              scaled to size 6.1pt on input line 254.
 
-Underfull \hbox (badness 1946) in paragraph at lines 281--281
-[]| []\TU/Montserrat(4)/b/n/6.1 React/Next.js[] []\TU/Montserrat(1)/m/n/10.95 ,
-[] []\TU/Montserrat(4)/b/n/6.1 Express, Nest[] []\TU/Montserrat(1)/m/n/10.95 ,[
-] []\TU/Montserrat(4)/b/n/6.1 Tailwind[] []\TU/Montserrat(1)/m/n/10.95 ,[] []\T
-U/Montserrat(4)/b/n/6.1 State Management: Redux[] []\TU/Montserrat(1)/m/n/10.95
- ,[] []\TU/Montserrat(4)/b/n/6.1 Tanstack[] []\TU/Montserrat(1)/m/n/10.95 ,[] [
-]\TU/Montserrat(4)/b/n/6.1 WordPress[] []\TU/Montserrat(1)/m/n/10.95 ,[] []\TU/
-Montserrat(4)/b/n/6.1 Pnpm Monorepo[] []\TU/Montserrat(1)/m/n/10.95 ,[]  [],[] 
-[]\TU/Montserrat(4)/b/n/6.1 Elastic-
- []
-
-
 Package fontspec Info: Font family 'Montserrat(9)' created for font
 (fontspec)             'Montserrat' with options [Ligatures=TeX,Path =
 (fontspec)             ./fonts/,Extension = .ttf,UprightFont =
@@ -1047,7 +1035,7 @@ Overfull \hbox (236.0pt too wide) in paragraph at lines 193--333
 
 [1
 
-] [2]
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
  (./resume.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 333.
@@ -1073,10 +1061,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
 Here is how much of TeX's memory you used:
  14638 strings out of 479819
  288524 string characters out of 5895831
- 680522 words of memory out of 5000000
+ 681474 words of memory out of 5000000
  31528 multiletter control sequences out of 15000+600000
  536037 words of font info for 109 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  51i,14n,96p,670b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on resume.pdf (2 pages).
+Output written on resume.pdf (1 page).
