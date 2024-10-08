@@ -57,12 +57,11 @@
 % Custom commands
 \newcommand{\resumetitle}[1]{{\fontsize{10.4pt}{13pt}\selectfont\addfontfeatures{LetterSpace=12.0}\montserratBold\textbf{#1}\xspace}}
 
-\newcommand{\resumeprofession}[1]{{\fontsize{7pt}{10.8pt}\selectfont\addfontfeatures{LetterSpace=32.0}#1\xspace}}
+\newcommand{\resumeprofession}[1]{{\fontsize{7.4pt}{10.8pt}\selectfont\addfontfeatures{LetterSpace=32.0}#1\xspace}}
 
-\newcommand{\sectiontitle}[1]{{\fontsize{6.9pt}{7.6pt}\selectfont\montserratBold\addfontfeatures{LetterSpace=2.0}\textbf{#1}\xspace}}
+\newcommand{\sectiontitle}[1]{{\fontsize{7.2pt}{7.6pt}\selectfont\montserratBold\addfontfeatures{LetterSpace=2.0}\textbf{#1}\xspace}}
 
-
-\newcommand{\experiencetitle}[1]{{\fontsize{6.7pt}{10.2pt}\selectfont\bfseries\montserratBold\addfontfeatures{LetterSpace=3.0}\textbf{#1}\xspace}}
+\newcommand{\experiencetitle}[1]{{\fontsize{7.1pt}{10.2pt}\selectfont\bfseries\montserratBold\addfontfeatures{LetterSpace=3.0}\textbf{#1}\xspace}}
 
 \newcommand{\para}[1]{{\fontsize{6.1pt}{9.792pt}\selectfont\addfontfeatures{LetterSpace=0.8}\textbf{#1}\xspace}}
 
@@ -125,6 +124,11 @@
   #4% Tasks
   #5% Skills
 }
+\newcommand{\experiencecontainerwithoutSkill}[4]{%
+  \experiencetitle{#1}#2\\[0.2ex]% title and location
+  #3% Engagements
+  #4% Tasks
+}
 
 \newlist{myitemize}{itemize}{1}
 
@@ -173,7 +177,7 @@
 \end{center}
 \setlength{\columnsep}{0.4cm}{\raggedcolumns}
 \raggedcolumns% Reduce the margin on each column
-\renewcommand{\arraystretch}{1.1} % Adjust this value to increase/decrease line spacing
+\renewcommand{\arraystretch}{1.1}% Adjust this value to increase/decrease line spacing
 \begin{multicols}{3}%
 	\label{sec:contact}\begin{tabularx}{\linewidth}{@{}Xr@{}}%
 		\para{\color{customgray}Email:}      & \customlink{mailto:contact@masayagh.com?subject=Resume Inquiry}{contact@masayagh.com} \\%
@@ -190,21 +194,24 @@
 \end{multicols}
 \sectioncontainer{SUMMARY OF EXPERIENCE}{%
 \label{sec:summary}\para{\color{customgray}Committed software developer professional with over \str{7 years} of experience. Successfully Directed and delivered over \str{13 projects} for \str{international clients} across various industries, consistently enhancing process delivery and enabling \str{personalized experiences} at multiple stages.}
-}\\[1.4ex]
+}\\[1.6ex]%
 \sectioncontainer{PROFESSIONAL EXPERIENCES}{%
+	% add a empty space to separate the sections and make it more readable
+	\vspace{0.2em}
 	\label{sec:experiences}%
-	\experiencecontainer{%
+	\experiencecontainerwithoutSkill{%
 		\label{exp:independentfreelancer}%
 		\color{customblack}Independent Freelancer
 	}{%
-		\para{\color{customgray}Business Clients}
+		\para{\color{customgray}Self Converted Business Clients}
 	}{%
 		\para{\color{customgray}Technical Consultant}\customball{\para{\color{customgray}Remote}}\customball{\paraitalic{\color{customgray}August 2024 \-- Present}}\vspace{0.14em}%
 	}{%
-		\begin{myitemize}
+		\begin{myitemize}%
 			\item \para{\color{customgray}\str{Delivered branding websites} for international luxury brands, including \str{French Dandy} in Dubai, \str{Maud Diamand} in Brazil, and \str{Horde Studio} in the USA. \str{Collaborated closely} with global teams to create culturally relevant and engaging online presences. \str{Ensured exceptional client satisfaction} by maintaining open communication throughout the development process, aligning with client visions, and exceeding expectations, \str{improving} brand images across diverse markets.}%
 		\end{myitemize}\vspace{0.14em}
-	}\\[0.62ex]
+	}%
+	\vspace{0.2em}%
 	\experiencecontainer{%
     	\label{exp:cybercohesion}%
 		\color{customblack}Cyber Cohesion
@@ -213,14 +220,14 @@
 	}{%
 		\para{\color{customgray}Research \& Development, Web Tech Lead, Infra development}\customball{\para{\color{customgray}Self-Employed, Singapore}}\customball{\paraitalic{\color{customgray}May 2023 \-- July 2024}}\vspace{0.14em}%
 	}{%
-		\begin{myitemize}
+		\begin{myitemize}%
 			\item \para{\color{customgray}\str{Engineered} a \str{Golang RESTful API} integrated with \str{Kubernetes controller-runtime} to realize infrastructure applications for a security competitions domain. This effort enhanced role-based deployment isolation, \str{increasing deployment productivity by over 25\%} within one month, collaborating with a three-member team.}%
 			\item \para{\color{customgray}\str{Led and developed} essential software components for a \str{microservices platform} by automating internal development standards, \str{reducing maintenance efforts by 60\%} and \str{upholding} OWASP web security standards over seven months with a six-member team.}%
 			\item \para{\color{customgray}Optimized \str{NoSQL database} schemas and indexes by refining structures and common patterns reaching \str{an 11\% reduction in server query response time} in two months.}%
 		\end{myitemize}\vspace{0.14em}
 	}{%
 		\para{\color{customblack}Key Skills:}\hspace{2pt}\lang{Golang}\langseparator{}\lang{Bash}\langseparator{}\lang{Javascript / TypeScript}\langseparator{}\lang{PHP}\langseparator{}\skill{Docker \& Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{Nginx}\langseparator{}\skill{MongoDB}\langseparator{}\skill{MySQL}\langseparator{}\skill{RESTful APIs}\langseparator{}\skill{CI/CD pipeline development}
-	}\\[0.62ex]
+	}\\[1.1ex]%
 	\experiencecontainer{%
 		\label{exp:jonasdigitalagency}%
 		\color{customblack}Jonas Digital Agency
@@ -235,8 +242,8 @@
 		\end{myitemize}\vspace{0.14em}
 	}{%
 		\para{\color{customblack}Key Skills:}\hspace{2pt}\lang{JavaScript / TypeScript}\langseparator{}\lang{PHP}\langseparator{}\lang{Bash}\langseparator{}\skill{WebHook}\langseparator{}\skill{API Integration}\langseparator{}\skill{Restful API}\langseparator{}\skill{React}\langseparator{}\skill{Cloudflare}\langseparator{}\skill{Nginx}\langseparator{}\skill{Docker}\langseparator{}\skill{MySQL}\langseparator{}\skill{Unit Testing}\langseparator{}\skill{CI/CD}
-	}\\[0.62ex]
-	\experiencecontainer{%
+	}\\[1ex]%
+	\experiencecontainerwithoutSkill{%
 		\label{exp:lavishtrading}%
 		\color{customblack}Lavish Trading
 	}{%
@@ -247,35 +254,40 @@
 		\begin{myitemize}
 			\item \para{\color{customgray}Produced a \str{user-friendly web solution} for client enrollment in investment plans for a global project managing over \str{\$100 million in active investments}, leveraging the company's \str{12 years of industry expertise} to create a \str{new source of client conversions}.}
 		\end{myitemize}\vspace{0.14em}
-	}
-}\\[1.6ex]
+	}%
+}\\[1.6ex]%
 \sectioncontainer{SKILLS}{\label{sec:skills}
-	\customcol{Cloud Services}{%
-		\firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespaces}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}
-	}
-	\customcol{Containerization and Orchestration}{%
-		\firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}
-	}
-	\customcol{Programming Languages}{%
-		\firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{Bash}
-	}
-	\customcolnarrow{Front-end / Back-end}{%
-		\firstskill{React/Next.js}\langseparator{}\skill{Express, Nest}\langseparator{}\skill{Tailwind}\langseparator{}\skill{State Management: Redux}\langseparator{}\skill{Tanstack}\langseparator{}\skill{WordPress}\langseparator{}\skill{Pnpm Monorepo}\langseparator{}\skill{Elasticsearch}
-	}
-	\customcol{Database}{%
-		\firstskill{MySQL}\langseparator{}\skill{MongoDB}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{Redis}}
-	\customcol{Version Control and CI/CD}{%
-		\firstskill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Actions}}
-	\customcol{Testing Practices}{%
-		\firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest, Postman)}}
-	\customcol{Artificial Intelligence}{%
-		\firstskill{Open AI}\langseparator{}\skill{ChatGPT-4}\langseparator{}\skill{Claude 3.5}\langseparator{}\skill{Copilot}\langseparator{}\skill{Midjourney}\langseparator{}\skill{RAG}\langseparator{}\skill{LangChain}}
-	\customcol{Methodology and Standards}{%
-		\firstskill{Agile}\langseparator{}\skill{SOLID}\langseparator{}\skill{Design Pattern}\langseparator{}\skill{Clean Code}\langseparator{}\skill{Distributed System}\langseparator{}\skill{Serverless}}
-	\customcol{Design}{%
-		\firstskill{UI/UX}\langseparator{}\skill{Design thinking}\langseparator{}\skill{Photoshop}\langseparator{}\skill{Illustrator}\langseparator{}\skill{Figma}
-	}
-}\\[1.2ex]
+    \customcol{Cloud Services}{%
+        \firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespaces}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}
+    }
+    \customcol{Containerization and Orchestration}{%
+        \firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}
+    }
+    \customcol{Programming Languages}{%
+        \firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{Bash}
+    }
+    \customcol{Front-end / Back-end}{%
+        \firstskill{React/Next.js}\langseparator{}\skill{Express}\langseparator{}\skill{Nest}\langseparator{}\skill{Tailwind}\langseparator{}\skill{State Management: Redux}\langseparator{}\skill{Tanstack}\langseparator{}\skill{WordPress}\langseparator{}\skill{Pnpm Monorepo}
+    }
+    \customcol{Database}{%
+        \firstskill{MySQL}\langseparator{}\skill{MongoDB}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{Redis}
+    }
+    \customcol{Version Control and CI/CD}{%
+        \firstskill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Actions}
+    }
+    \customcol{Testing Practices}{%
+        \firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest, Postman)}
+    }
+    \customcol{Artificial Intelligence}{%
+        \firstskill{Open AI}\langseparator{}\skill{ChatGPT-4}\langseparator{}\skill{Claude 3.5}\langseparator{}\skill{Copilot}\langseparator{}\skill{Midjourney}\langseparator{}\skill{RAG}\langseparator{}\skill{LangChain}
+    }
+    \customcol{Methodology and Standards}{%
+        \firstskill{Agile}\langseparator{}\skill{SOLID}\langseparator{}\skill{Design Pattern}\langseparator{}\skill{Clean Code}\langseparator{}\skill{Distributed System}\langseparator{}\skill{Serverless}
+    }
+    \customcol{Design}{%
+        \firstskill{UI/UX}\langseparator{}\skill{Design thinking}\langseparator{}\skill{Photoshop}\langseparator{}\skill{Illustrator}\langseparator{}\skill{Figma}
+    }
+}\\[1.6ex]%
 \sectioncontainer{PROJECTS}{\label{sec:projects}%
 	\begingroup%
 	\label{proj:code-wrangler}%
@@ -300,19 +312,18 @@
         \item \para{\color{customgray}Collaborated in a \str{140-member team}, including \str{42 developers} guided by Oussama Ommar, to develop \str{visual NFTs} for artist Sofiane Pamart, achieving the launch on one week.}
     \end{myitemize}
     \endgroup%
-}\\[1.6ex]
+}\\[1.9ex]%
 \sectioncontainer{EDUCATION}{%
 	\label{sec:education}%
 	\begingroup
-	\customcol{\para{\color{customblack}Master's in Big Data \& Cloud Computing}}{\para{\color{customgray}University of Hassan II, Casablanca, expected graduation 2025}}\\%
-	\customcol{\para{\color{customblack}Bachelor's in Computer Science}}{\para{\color{customgray}University of Hassan II, Casablanca, 2022 \-- 2023}}\\%
+		\customcol{\para{\color{customblack}Master's in Big Data \& Cloud Computing}}{\para{\color{customgray}University of Hassan II, Casablanca, expected graduation 2025}}\\%
+		\customcol{\para{\color{customblack}Bachelor's in Computer Science}}{\para{\color{customgray}University of Hassan II, Casablanca, 2022 \-- 2023}}\\%
 	\endgroup%
-	\vspace{0em}%
 }\\[0ex]%
 \sectioncontainerrow{APPROVALS}{%
 	\label{references}%
-	\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}
-}\\[0ex]%
+	\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}%
+}\\[0.1ex]%
 \sectioncontainerrow{ACHIEVEMENTS}{%
 	\label{sec:achievement}%
     \begin{minipage}{\linewidth}
@@ -325,6 +336,6 @@
 		\customball{\customlink{https://www.cybercohesions.com/}{Cyber Cohesion}}%
 		\customball{\customlink{https://www.figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma Portfolio}}%
 	\end{minipage}%
-}\\[0.2ex]
+}\\[0.7ex]%
 \sectioncontainerdoublerow{LANGUAGES}{\para{\color{customgray}English}\customball{\para{\color{customgray}French}}\customball{\para{\color{customgray}Arabic}}}{ACTIVITIES}{\para{\color{customgray}Tech writing (see\customlink{https://www.linkedin.com/in/mohamedamine-sayagh/recent-activity/all/}{LinkedIn}or\customlink{https://medium.com/@masayagh}{Medium})}\customball{\para{\color{customgray}Open source contributor}}\customball{\para{\color{customgray}Tech mentoring}}}
 \end{document}
