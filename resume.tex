@@ -45,9 +45,9 @@
   Path = ./fonts/,
   Extension = .ttf,
   UprightFont = *-Medium,
-  BoldFont = *-SemiBold,
+  BoldFont = *-Medium,
   ItalicFont = *-MediumItalic,
-  BoldItalicFont = *-SemiBoldItalic,
+  BoldItalicFont = *-MediumItalic,
   Ligatures = TeX,
   Scale = 1.0
 ]
@@ -63,11 +63,11 @@
 
 \newcommand{\experiencetitle}[1]{{\fontsize{7.1pt}{10.2pt}\selectfont\bfseries\montserratBold\addfontfeatures{LetterSpace=3.0}\textbf{#1}\xspace}}
 
-\newcommand{\para}[1]{{\fontsize{6.1pt}{9.792pt}\selectfont\addfontfeatures{LetterSpace=0.8}\textbf{#1}\xspace}}
+\newcommand{\para}[1]{{\fontsize{6.4pt}{12.492pt}\selectfont\addfontfeatures{LetterSpace=0.8}\textbf{#1}\xspace}}
 
-\newcommand{\paraitalic}[1]{{\fontsize{6.1pt}{10.492pt}\selectfont\addfontfeatures{LetterSpace=4.0}\textit{#1}\xspace}}
+\newcommand{\paraitalic}[1]{{\fontsize{6.4pt}{12.492pt}\selectfont\addfontfeatures{LetterSpace=4.0}\textit{#1}\xspace}}
 
-\newcommand{\linkfont}[1]{{\fontsize{6.1pt}{10.492pt}\selectfont\addfontfeatures{LetterSpace=1.0}\textit{\underline{#1}}\xspace}}
+\newcommand{\linkfont}[1]{{\fontsize{6.4pt}{12.492pt}\selectfont\addfontfeatures{LetterSpace=1.0}\textit{\underline{#1}}\xspace}}
 
 % Custom colors
 \definecolor{customblack}{HTML}{111517}
@@ -89,7 +89,13 @@
   {\color{customblack}\textbf{#1}}%
 }
 \newcommand{\customcol}[2]{%
-  \begin{tabularx}{\linewidth}{@{}p{155pt}@{}X@{}}%
+  \begin{tabularx}{\linewidth}{@{}p{145pt}@{}X@{}}%
+    \para{\color{customblack}#1}&#2%
+  \end{tabularx}%
+}
+
+\newcommand{\customcolproject}[2]{%
+  \begin{tabularx}{\linewidth}{@{}p{165pt}@{}X@{}}%
     \para{\color{customblack}#1}&#2%
   \end{tabularx}%
 }
@@ -107,7 +113,7 @@
 }
 
 \newcommand{\sectioncontainerrow}[2]{%
-\begin{minipage}[t]{\dimexpr\linewidth-10pt\relax}%
+\begin{minipage}[t]{\dimexpr\linewidth-6pt\relax}%
 \begin{tabular}{@{}p{56pt}l@{}}%
 \sectiontitle{\color{customblack}#1} & #2%
 \end{tabular}%
@@ -197,7 +203,7 @@
 }\\[1.6ex]%
 \sectioncontainer{PROFESSIONAL EXPERIENCES}{%
 	% add a empty space to separate the sections and make it more readable
-	\vspace{0.2em}
+	\vspace{0.2em}%
 	\label{sec:experiences}%
 	\experiencecontainerwithoutSkill{%
 		\label{exp:independentfreelancer}%
@@ -208,12 +214,12 @@
 		\para{\color{customgray}Technical Consultant}\customball{\paraitalic{\color{customgray}August 2024 \-- Present}}\vspace{0.14em}%
 	}{%
 		\begin{myitemize}%
-			\item \para{\color{customgray}\str{Converted} luxury international brands, including \str{French Dandy} (Dubai), \str{Maud Diamand} (Brazil), and \str{Horde Studio} (USA), \str{increasing my freelance revenue by 60\%} and my \str{task delegation by 40\%}.}%
+			\item \para{\color{customgray}\str{Converted} luxury international brands, including \str{French Dandy} (Dubai), \str{Maud Diamand} (Brazil), and \str{Horde Studio} (USA), \str{increasing freelance revenue} by \str{60\%} and expanding my \str{team by delegating 40\%} of project tasks to a newly recruited team member.}%
 			\item \para{\color{customgray}\str{Collaborated closely} with global teams to create culturally relevant and engaging online presences, \str{achieving 90\% on-time project delivery}. Ensured client satisfaction by maintaining open communication throughout the development process, aligning with the client visions, improving brand images across diverse markets.}%
 		\end{myitemize}\vspace{0.14em}
 	}%
 	\vspace{0.2em}%
-	\experiencecontainer{%
+	\experiencecontainerwithoutSkill{%
     	\label{exp:cybercohesion}%
 		\color{customblack}Cyber Cohesion
 	}{%
@@ -226,10 +232,9 @@
 			\item \para{\color{customgray}\str{Led and developed} essential software components for a \str{microservices platform} by automating internal development standards, \str{reducing maintenance efforts by 60\%} and \str{upholding} OWASP web security standards over seven months with a six-member team.}%
 			\item \para{\color{customgray}Optimized \str{NoSQL database} schemas and indexes by refining structures and common patterns reaching \str{an 11\% reduction in server query response time} in two months.}%
 		\end{myitemize}\vspace{0.14em}
-	}{%
-		\para{\color{customblack}Key Skills:}\hspace{2pt}\lang{Golang}\langseparator{}\lang{Bash}\langseparator{}\lang{Javascript / TypeScript}\langseparator{}\lang{PHP}\langseparator{}\skill{Docker \& Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{Nginx}\langseparator{}\skill{MongoDB}\langseparator{}\skill{MySQL}\langseparator{}\skill{RESTful APIs}\langseparator{}\skill{CI/CD pipeline development}
-	}\\[1.1ex]%
-	\experiencecontainer{%
+	}%
+	\vspace{0.2em}%
+	\experiencecontainerwithoutSkill{%
 		\label{exp:jonasdigitalagency}%
 		\color{customblack}Jonas Digital Agency
 	}{%
@@ -241,9 +246,8 @@
 			\item \para{\color{customgray}\str{Executed} NGINX-based cloud deployment for web solutions on a Hostinger VPS by streamlining \str{CI/CD pipelines}, \str{reducing development cycles by 83\%} within four weeks, followed by ongoing enhancements over five months.}%
 			\item \para{\color{customgray}\str{Completed} seven global full-stack projects with complex third-party systems integration need, \str{including debugging faulty plugins and developing solutions for store management} while maintaining continuous communication with external tech suppliers.}%
 		\end{myitemize}\vspace{0.14em}
-	}{%
-		\para{\color{customblack}Key Skills:}\hspace{2pt}\lang{JavaScript / TypeScript}\langseparator{}\lang{PHP}\langseparator{}\lang{Bash}\langseparator{}\skill{WebHook}\langseparator{}\skill{API Integration}\langseparator{}\skill{Restful API}\langseparator{}\skill{React}\langseparator{}\skill{Cloudflare}\langseparator{}\skill{Nginx}\langseparator{}\skill{Docker}\langseparator{}\skill{MySQL}\langseparator{}\skill{Unit Testing}\langseparator{}\skill{CI/CD}
-	}\\[1ex]%
+	}%
+	\vspace{0.2em}%
 	\experiencecontainerwithoutSkill{%
 		\label{exp:lavishtrading}%
 		\color{customblack}Lavish Trading
@@ -292,7 +296,7 @@
 \sectioncontainer{PROJECTS}{\label{sec:projects}%
 	\begingroup%
 	\label{proj:code-wrangler}%
-	\customcol{\experiencetitle{\color{customblack}Code Wrangler: Automation prompting}}{\paraitalic{\color{customgray}October 2024 \-- Present} \customball{\linkfont{\href{https://github.com/aminesayagh/Code-Wrangler}{View the project repository}}}}\vspace{0.2em}
+	\customcolproject{\experiencetitle{\color{customblack}Code Wrangler: Automation prompting}}{\paraitalic{\color{customgray}October 2024 \-- Present} \customball{\linkfont{\href{https://github.com/aminesayagh/Code-Wrangler}{View the project repository}}}}\vspace{0.2em}
 	\begin{myitemize}
 		\item \para{\color{customgray}Built a \str{command-line interface (CLI) tool} with a configurable and resible configuration interface that generates documentation resume from project workspaces extended to an Retrieval-Augmentated Generation (RAG) pipeline, tailored for developers preparing \str{continuous versioned project overviews} for code generation.}
 	\end{myitemize}
@@ -300,7 +304,7 @@
 	\vspace{0.6em}
     \begingroup%
     \label{proj:zec}\label{proj:data-parsing-library}%
-    \customcol{\experiencetitle{\color{customblack}Zec: Data Parsing Orchestration Library}}{\paraitalic{\color{customgray}May 2024 \-- July 2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Zec-Data-Parsing}{View the project documentation}}}}\vspace{0.2em}
+    \customcolproject{\experiencetitle{\color{customblack}Zec: Data Parsing Orchestration Library}}{\paraitalic{\color{customgray}May 2024 \-- July 2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Zec-Data-Parsing}{View the project documentation}}}}\vspace{0.2em}
     \begin{myitemize}
         \item \para{\color{customgray}\str{Authored} a standalone PHP open-source library that \str{introduces a novel method to orchestrate between business-specific data parsers} while maintaining confidentiality. The library leverages schema definitions and modular, extensible configuration management to coordinate parsers without directly handling data parsing.}
     \end{myitemize}
@@ -308,7 +312,7 @@
     \vspace{0.6em}
     \begingroup%
     \label{proj:sofiane-pamart}\label{proj:music-nft}\label{proj:oussama-ommar}%
-    \customcol{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane Pamart}}{\paraitalic{\color{customgray}July 2021 \-- One week}}
+    \customcolproject{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane Pamart}}{\paraitalic{\color{customgray}July 2021 \-- One week}}
     \begin{myitemize}
         \item \para{\color{customgray}Collaborated in a \str{140-member team}, including \str{42 developers} guided by Oussama Ommar, to develop \str{visual NFTs} for artist Sofiane Pamart, achieving the launch on one week.}
     \end{myitemize}
@@ -328,14 +332,14 @@
 \sectioncontainerrow{ACHIEVEMENTS}{%
 	\label{sec:achievement}%
     \begin{minipage}{\linewidth}
-		\customlink{https://www.lavish.masayagh.com/}{Lavish Trading}%
-		\customball{\customlink{https://www.french-dandy.com/}{French Dandy}}%
-		\customball{\customlink{https://www.happy-water.masayagh.com/}{Happy Water}}%
-		\customball{\customlink{https://www.greening-energy.com/}{Greening Energy}}%
-		\customball{\customlink{https://www.coreas-ht.com/}{Coreas}}%
-		\customball{\customlink{https://www.hordestudio.com/}{Horde Studio}}%
-		\customball{\customlink{https://www.cybercohesions.com/}{Cyber Cohesion}}%
-		\customball{\customlink{https://www.figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma Portfolio}}%
+		\customlink{https://lavish.masayagh.com/}{Lavish Trading}%
+		\customball{\customlink{https://french-dandy.com/}{French Dandy}}%
+		\customball{\customlink{https://happy-water.masayagh.com/}{Happy Water}}%
+		\customball{\customlink{https://greening-energy.com/}{Greening Energy}}%
+		\customball{\customlink{https://coreas-ht.com/}{Coreas}}%
+		\customball{\customlink{https://hordestudio.com/}{Horde Studio}}%
+		\customball{\customlink{https://cybercohesions.com/}{Cyber Cohesion}}%
+		\customball{\customlink{https://figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma Portfolio}}%
 	\end{minipage}%
 }\\[0.7ex]%
 \sectioncontainerdoublerow{LANGUAGES}{\para{\color{customgray}English}\customball{\para{\color{customgray}French}}\customball{\para{\color{customgray}Arabic}}}{ACTIVITIES}{\para{\color{customgray}Tech writing (see\customlink{https://www.linkedin.com/in/mohamedamine-sayagh/recent-activity/all/}{LinkedIn}or\customlink{https://medium.com/@masayagh}{Medium})}\customball{\para{\color{customgray}Open source contributor}}\customball{\para{\color{customgray}Tech mentoring}}}
