@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.27)  18 OCT 2024 20:30
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.27)  18 OCT 2024 20:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -519,15 +519,15 @@ LaTeX Font Info:    ... okay on input line 181.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(21.62393pt, 554.26001pt, 21.62393pt)
-* v-part:(T,H,B)=(21.62393pt, 801.79898pt, 21.62393pt)
+* h-part:(L,W,R)=(19.91684pt, 557.6742pt, 19.91684pt)
+* v-part:(T,H,B)=(19.91684pt, 805.21317pt, 19.91684pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=554.26001pt
-* \textheight=801.79898pt
-* \oddsidemargin=-50.64606pt
-* \evensidemargin=-50.64606pt
-* \topmargin=-87.64606pt
+* \textwidth=557.6742pt
+* \textheight=805.21317pt
+* \oddsidemargin=-52.35315pt
+* \evensidemargin=-52.35315pt
+* \topmargin=-89.35315pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -938,14 +938,14 @@ pt=latn;language=dflt;letterspace=0.8;+smcp;mapping=tex-text;"
 =latn;language=dflt;letterspace=0.8;+smcp;mapping=tex-text;"
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
 
  []
 
 LaTeX Font Info:    Font shape `TU/Montserrat(1)/m/n' will be
-(Font)              scaled to size 7.2pt on input line 335.
+(Font)              scaled to size 7.2pt on input line 336.
 LaTeX Font Info:    Font shape `TU/Montserrat(0)/m/n' will be
-(Font)              scaled to size 7.2pt on input line 335.
+(Font)              scaled to size 7.2pt on input line 336.
 
 Package fontspec Info: Font family 'Montserrat(9)' created for font
 (fontspec)             'Montserrat' with options [Path = ./fonts/,Extension =
@@ -983,21 +983,21 @@ pt=latn;language=dflt;letterspace=2.4;+smcp;mapping=tex-text;"
 =latn;language=dflt;letterspace=2.4;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(9)/m/n' will be
-(Font)              scaled to size 7.2pt on input line 335.
+(Font)              scaled to size 7.2pt on input line 336.
 LaTeX Font Info:    Font shape `TU/Montserrat(9)/b/n' will be
-(Font)              scaled to size 7.2pt on input line 335.
+(Font)              scaled to size 7.2pt on input line 336.
 
-Overfull \hbox (6.18628pt too wide) in paragraph at lines 348--348
+Overfull \hbox (6.18628pt too wide) in paragraph at lines 349--349
 []|[]\TU/Montserrat(9)/b/n/7.2 ACHIEVEMENTS[]| 
  []
 
 
-Overfull \hbox (68.00002pt too wide) in paragraph at lines 348--348
+Overfull \hbox (68.00002pt too wide) in paragraph at lines 349--349
 [][] 
  []
 
 LaTeX Font Info:    Font shape `TU/Montserrat(4)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 349.
+(Font)              scaled to size 10.95pt on input line 350.
 
 Package fontspec Info: Font family 'Montserrat(10)' created for font
 (fontspec)             'Montserrat' with options [Ligatures=TeX,Path =
@@ -1036,9 +1036,9 @@ pt=latn;language=dflt;letterspace=0.8;letterspace=1.0;mapping=tex-text;"
 pt=latn;language=dflt;letterspace=0.8;letterspace=1.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(10)/b/n' will be
-(Font)              scaled to size 6.4pt on input line 349.
+(Font)              scaled to size 6.4pt on input line 350.
 LaTeX Font Info:    Font shape `TU/Montserrat(10)/b/it' will be
-(Font)              scaled to size 6.4pt on input line 349.
+(Font)              scaled to size 6.4pt on input line 350.
 
 ! LaTeX Error: Bad math environment delimiter.
 
@@ -1046,22 +1046,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.349 ...\para{\color{customgray}Tech mentoring}}}
+l.350 ...\para{\color{customgray}Tech mentoring}}}
                                                   
 ? 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 350.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
 
-Overfull \hbox (236.0pt too wide) in paragraph at lines 207--350
+Overfull \hbox (236.0pt too wide) in paragraph at lines 207--351
 [] 
  []
 
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 350.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 350.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 350.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
 
 
 Package rerunfilecheck Warning: File `resume.out' has changed.
@@ -1078,12 +1078,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 350.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
  ) 
 Here is how much of TeX's memory you used:
  14629 strings out of 479819
  285664 string characters out of 5895831
- 672180 words of memory out of 5000000
+ 672177 words of memory out of 5000000
  31516 multiletter control sequences out of 15000+600000
  536069 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

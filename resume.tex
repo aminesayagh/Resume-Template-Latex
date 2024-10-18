@@ -52,7 +52,7 @@
   Scale = 1.0
 ]
 
-\geometry{left=0.76cm, right=0.76cm, top=0.76cm, bottom=0.76cm}
+\geometry{left=0.7cm, right=0.7cm, top=0.7cm, bottom=0.7cm}
 
 % Custom commands
 \newcommand{\resumetitle}[1]{{\fontsize{11.4pt}{13pt}\selectfont\addfontfeatures{LetterSpace=16.0}\montserratBold\textbf{#1}\xspace}}
@@ -87,7 +87,7 @@
 \newcommand{\firstskill}[1]{\hspace{3pt}{\para{\color{customgray}#1}}}%
 \newcommand{\skill}[1]{\para{\color{customgray}#1}}%
 \newcommand{\lang}[1]{\paraitalic{\color{customblack}#1}}%
-\newcommand{\langseparator}{\hspace{1.5pt}\fontsize{5pt}{9pt}\textcolor{customgray}{,}\hspace{1.5pt}}%
+\newcommand{\langseparator}{\hspace{1.5pt}\fontsize{4.6pt}{9pt}\textcolor{customgray}{,}\hspace{1.5pt}}%
 
 \newcommand{\str}[1]{%
   {\color{customblack}\textbf\textit{#1}}%
@@ -203,7 +203,7 @@
 	\end{tabularx}
 \end{multicols}
 \sectioncontainer{SUMMARY OF EXPERIENCE}{%
-\label{sec:summary}\vspace{0.1em}\para{\color{customgray}Committed software developer professional with over \str{7 years} of experience. Successfully Directed and delivered over \str{13 projects} for \str{international clients} across various industries, consistently enhancing process delivery and enabling \str{personalized experiences} at multiple stages.}
+\label{sec:summary}\vspace{0.1em}\para{\color{customgray}Committed software developer professional with over \str{7 years} of experience. Successfully led and delivered over \str{13 projects} for \str{international clients} across various industries, consistently enhancing process delivery and enabling \str{personalized experiences} at multiple stages.}
 }\\[1.6ex]%
 \sectioncontainer{PROFESSIONAL EXPERIENCES}{%
 	% add a empty space to separate the sections and make it more readable
@@ -232,8 +232,8 @@
 		\para{\color{customgray}Research \& Development, Web Tech Lead, Infra development}\customball{\para{\color{customgray}Self-Employed, Singapore}}\customball{\paraitalic{\color{customgray}May 2023 \-- July 2024}}\vspace{0.14em}%
 	}{%
 		\begin{myitemize}%
-			\item \para{\color{customgray}\str{Engineered} a \str{Golang RESTful API} integrated with \str{Kubernetes controller-runtime} to realize infrastructure applications for a security competitions domain. This effort enhanced role-based deployment isolation, \str{increasing deployment productivity by over 25\%} within one month, collaborating with a three-member team.}%
-			\item \para{\color{customgray}\str{Led and developed} essential software components for a \str{microservices platform} by automating internal development standards, \str{reducing maintenance efforts by 60\%} and \str{upholding} OWASP web security standards over seven months with a six-member team.}%
+			\item \para{\color{customgray}\str{Designed and implemented} a \str{Golang RESTful API} integrated with \str{Kubernetes controller-runtime} to realize infrastructure applications for a security competitions domain. This effort enhanced role-based deployment isolation, the easy to change, and \str{increasing deployment time by over 25\%} within one month, collaborating with a three-member team.}%
+			\item \para{\color{customgray}\str{Led and developed} essential software components for a \str{microservices platform} by automating internal development standards, \str{reducing the complexity of adding new features by 60\%} and \str{upholding} OWASP web security standards over seven months with a six-member team.}%
 			\item \para{\color{customgray}Optimized \str{NoSQL database} schemas and indexes by refining structures and common patterns reaching \str{an 11\% reduction in server query response time} in two months.}%
 		\end{myitemize}\vspace{0.14em}
 	}%
@@ -265,7 +265,8 @@
 		\end{myitemize}\vspace{0.14em}
 	}%
 }\\[1.6ex]%
-\sectioncontainer{SKILLS}{\label{sec:skills}
+\sectioncontainer{SKILLS}{
+    \label{sec:skills}%
     \customcol{Cloud Services}{%
         \firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespaces}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}
     }
@@ -300,15 +301,15 @@
 \sectioncontainer{PROJECTS}{\label{sec:projects}%
 	\begingroup%
 	\label{proj:code-wrangler}%
-	\customcolproject{\experiencetitle{\color{customblack}Code Wrangler: prompt automation}}{\paraitalic{\color{customgray}October 2024 \-- Present} \customball{\linkfont{\href{https://github.com/aminesayagh/Code-Wrangler}{View the project repository}}}}\vspace{0.2em}
+	\customcolproject{\experiencetitle{\color{customblack}Code Wrangler: prompt automation}}{\paraitalic{\color{customgray}October 2024 \-- Present} \customball{\linkfont{\href{https://github.com/aminesayagh/Code-Wrangler}{View the project repository}}}}\vspace{0.16em}
 	\begin{myitemize}
-		\item \para{\color{customgray}Built a \str{command-line interface (CLI) tool} with a configurable and risible configuration interface that generates documentation resume from project workspaces extended to an Retrieval-Augmentated Generation (RAG) pipeline, tailored for developers preparing \str{continuous versioned project overviews} for code generation.}
+		\item \para{\color{customgray}Built a \str{command-line interface (CLI) tool} with a configurable and reusable configuration interface that generates documentation resume from project workspaces extended to an Retrieval-Augmentated Generation (RAG) pipeline, tailored for developers preparing \str{continuous versioned project overviews} for code generation.}
 	\end{myitemize}
 	\endgroup
 	\vspace{0.6em}
     \begingroup%
     \label{proj:zec}\label{proj:data-parsing-library}%
-    \customcolproject{\experiencetitle{\color{customblack}Zec: Data Parsing Library}}{\paraitalic{\color{customgray}May 2024 \-- July 2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Zec-Data-Parsing}{View the project documentation}}}}\vspace{0.2em}
+    \customcolproject{\experiencetitle{\color{customblack}Zec: Data Parsing Library}}{\paraitalic{\color{customgray}May 2024 \-- July 2024} \customball{\linkfont{\href{https://github.com/aminesayagh/Zec-Data-Parsing}{View the project documentation}}}}\vspace{0.16em}
     \begin{myitemize}
         \item \para{\color{customgray}\str{Authored} a standalone PHP open-source library that \str{introduces a novel method to orchestrate between business-specific data parsers} while maintaining confidentiality. The library leverages schema definitions and modular, extensible configuration management to coordinate parsers without directly handling data parsing.}
     \end{myitemize}
@@ -316,7 +317,7 @@
     \vspace{0.6em}
     \begingroup%
     \label{proj:sofiane-pamart}\label{proj:music-nft}\label{proj:oussama-ommar}%
-    \customcolproject{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane Pamart}}{\paraitalic{\color{customgray}July 2021 \-- One week}}\vspace{0.2em}
+    \customcolproject{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane Pamart}}{\paraitalic{\color{customgray}July 2021 \-- One week}}\vspace{0.16em}
     \begin{myitemize}
         \item \para{\color{customgray}Collaborated in a \str{140-member team}, including \str{42 developers} guided by Oussama Ommar, to develop \str{visual NFTs} for artist Sofiane Pamart, achieving the launch on one week.}
     \end{myitemize}
