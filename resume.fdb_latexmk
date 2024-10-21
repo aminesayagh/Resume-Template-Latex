@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1729543404 "/workspaces/Resume-Template-Latex/resume.tex" "/workspaces/Resume-Template-Latex/resume.pdf" "resume" 1729543404
+["pdflatex"] 1729543948 "/workspaces/Resume-Template-Latex/resume.tex" "/workspaces/Resume-Template-Latex/resume.pdf" "resume" 1729543948
   "/etc/texmf/web2c/texmf.cnf" 1727464403 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/codespace/.texlive2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1727507159 8261179 b712d6050a5a8a4991bd84f212ff5659 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -53,10 +53,10 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1463002160 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
-  "/workspaces/Resume-Template-Latex/resume.aux" 1729543403 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/workspaces/Resume-Template-Latex/resume.tex" 1729543403 17537 4ff57249b938ef50a3a7fd2541e6d640 ""
-  "resume.tex" 1729543403 17537 4ff57249b938ef50a3a7fd2541e6d640 ""
+  "/workspaces/Resume-Template-Latex/resume.aux" 1729543946 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/workspaces/Resume-Template-Latex/resume.tex" 1729543947 17509 0d5ab9a1758a7198c8edf31a075eb215 ""
+  "resume.tex" 1729543947 17509 0d5ab9a1758a7198c8edf31a075eb215 ""
   (generated)
-  "/workspaces/Resume-Template-Latex/resume.log"
-  "/workspaces/Resume-Template-Latex/resume.pdf"
   "resume.log"
+  "/workspaces/Resume-Template-Latex/resume.pdf"
+  "/workspaces/Resume-Template-Latex/resume.log"
