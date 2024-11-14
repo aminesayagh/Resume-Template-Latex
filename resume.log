@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.27)  14 NOV 2024 09:09
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.27)  14 NOV 2024 20:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -571,10 +571,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 181.
 LaTeX Info: Redefining \pageref on input line 181.
 LaTeX Info: Redefining \nameref on input line 181.
-
-(./resume.out) (./resume.out)
 \@outlinefile=\write3
 \openout3 = `resume.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -727,7 +729,6 @@ pt=latn;language=dflt;letterspace=32.0;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Montserrat(3)/m/n' will be
 (Font)              scaled to size 7.8pt on input line 187.
-
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
 
 Package fontspec Info: Font family 'Montserrat(4)' created for font
@@ -1061,19 +1062,28 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 355.
  (./resume.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 355.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 355.
-Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
+
+Package rerunfilecheck Warning: File `resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `resume.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 355.
  ) 
 Here is how much of TeX's memory you used:
- 14633 strings out of 479819
- 285702 string characters out of 5895831
- 664830 words of memory out of 5000000
+ 14629 strings out of 479819
+ 285658 string characters out of 5895831
+ 666419 words of memory out of 5000000
  31516 multiletter control sequences out of 15000+600000
  536069 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
