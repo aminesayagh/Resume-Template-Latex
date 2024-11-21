@@ -2,68 +2,162 @@
 
 A professional LaTeX resume template designed for use with GitHub Codespaces, making it easy to maintain and update your resume without dealing with local LaTeX installations.
 
-## Overview
+## Getting Started
 
-This repository contains a LaTeX-based resume template with:
-- Clean, modern design
-- Responsive layout
-- Custom fonts
-- Professional formatting
+1. **Fork the Repository**:
+   - Visit the repository on GitHub
+   - Click the "Fork" button in the top-right corner
+   - Wait for the forking process to complete
 
-## Quick Start with GitHub Codespaces (Recommended)
+2. **Open in Codespaces**:
+   - Go to your forked repository
+   - Click the "Code" button
+   - Select "Open with Codespaces"
+   - Click "New codespace"
 
-1. Click the "Code" button and select "Open with Codespaces"
-2. Once the Codespace is ready, open a terminal and run:
+3. **Initial Setup**:
 ```bash
 chmod +x install.sh
 ./install.sh
 ```
-3. After installation, edit your resume in `resume.tex`
-4. To compile your changes, run:
+
+4. **Compile Resume**:
 ```bash
 ./run.sh
 ```
-5. Find your compiled resume at `resume.pdf`
 
 ## File Structure
 
-- `install.sh`: Initial setup script for dependencies
-- `run.sh`: Compilation script for the resume
-- `resume.tex`: Main resume content
-- `.vscode/`: VS Code configuration
-- `fonts/`: Custom font files
-- Other `.tex` and auxiliary files for the LaTeX compilation process
+```
+.
+├── fonts/                  # Custom Montserrat font files
+├── .vscode/               # VS Code configuration
+├── install.sh             # Installation script
+├── run.sh                # Compilation script
+├── resume.tex            # Main resume content
+└── README.md             # Documentation
+```
 
-## Local Installation (Not Recommended)
+## LaTeX Code Structure
 
-While local installation is possible, it requires:
-- A complete LaTeX distribution
-- All required packages
-- Font management setup
-- Potential system-specific configurations
+### 1. Document Setup
+```latex
+% At the top of resume.tex
+\documentclass[a4paper,11pt]{article}
+% Packages for language, layout, typography, etc.
+```
 
-Due to these complexities, we strongly recommend using GitHub Codespaces instead.
+### 2. Customization Areas
 
-## Usage
+#### Personal Information
+```latex
+% Update these sections with your information
+\resumetitle{Your Name}
+\resumeprofession{YOUR TITLE}
 
-1. **First Time Setup**:
-   - Open in Codespaces
-   - Make `install.sh` executable and run it
-   - Wait for all dependencies to install
+% Contact information in multicols environment
+\begin{multicols}{3}
+  % Email, phone, LinkedIn, etc.
+\end{multicols}
+```
 
-2. **Making Changes**:
-   - Edit `resume.tex`
-   - Run `./run.sh` to compile
-   - Check `resume.pdf` for output
+#### Experience Section
+```latex
+\sectioncontainer{PROFESSIONAL EXPERIENCES}{
+  \experiencecontainerwithoutSkill{
+    % Company Name
+  }{
+    % Company Description
+  }{
+    % Time Period
+  }{
+    % Bullet Points
+  }
+}
+```
 
-3. **Regular Updates**:
-   - Run `./run.sh` after each change to recompile
+#### Skills Section
+```latex
+\sectioncontainer{SKILLS}{
+  \customcol{Category Name}{
+    \firstskill{First Skill}\langseparator{}
+    \skill{Additional Skills}
+  }
+}
+```
+
+### 3. Custom Commands
+
+#### Typography
+- `\resumetitle`: Main name at top (12pt)
+- `\resumeprofession`: Professional title (7.8pt)
+- `\sectiontitle`: Section headers (7.9pt)
+- `\para`: Regular text (6.5pt)
+- `\str`: Emphasized text (bold italic)
+
+#### Layout
+- `\customcol`: Two-column layout
+- `\sectioncontainer`: Section wrapper
+- `\customlink`: Hyperlinked text
+- `\customball`: Bullet point separator
+
+#### Colors
+```latex
+\definecolor{customblack}{HTML}{000000}
+\definecolor{customgray}{HTML}{494949}
+\definecolor{customwhite}{HTML}{F4F4F4}
+\definecolor{customblue}{HTML}{6A5EEF}
+```
+
+## Updating Your Resume
+
+1. **Personal Information**:
+   - Edit the header section in `resume.tex`
+   - Update contact information in the multicols section
+
+2. **Experience**:
+   - Locate the PROFESSIONAL EXPERIENCES section
+   - Use `\experiencecontainerwithoutSkill` for each role
+   - Follow the existing format for consistency
+
+3. **Skills**:
+   - Find the SKILLS section
+   - Use `\customcol` to create skill categories
+   - Add skills using `\firstskill` and `\skill` commands
+
+4. **Projects and Education**:
+   - Use similar section structures
+   - Maintain consistent spacing with `\\[1.6ex]`
+
+5. **Styling**:
+   - Colors can be modified in the "Custom colors" section
+   - Font sizes are defined in the "Custom commands" section
+
+## Tips for Maintenance
+
+1. **Compile Frequently**:
+   - Run `./run.sh` after each significant change
+   - Check the PDF output for formatting issues
+
+2. **Backup Your Changes**:
+   - Commit and push changes to your repository
+   - Keep a local backup of your customized content
+
+3. **Font Management**:
+   - Ensure all required font files are in the `fonts/` directory
+   - The template uses Montserrat font family
 
 ## Common Issues
 
-- If `install.sh` fails, verify file permissions
-- If compilation fails, check LaTeX syntax in `resume.tex`
-- For font issues, ensure all font files are present in the `fonts/` directory
+1. **Compilation Errors**:
+   - Check LaTeX syntax
+   - Verify all required packages are installed
+   - Ensure font files are present
+
+2. **Formatting Issues**:
+   - Check spacing commands (`\\[1.6ex]`)
+   - Verify column widths in `\customcol` commands
+   - Review text alignment in tables
 
 ## Contributing
 
