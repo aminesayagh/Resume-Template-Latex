@@ -29,6 +29,17 @@
 
 \titlespacing*{\section}{0pt}{1.5ex plus .1ex minus .1ex}{1.5ex plus .1ex}
 
+\newfontfamily\montserratExtraBold{Montserrat}[
+  Path = ./fonts/,
+  Extension = .ttf,
+  UprightFont = *-ExtraBold,
+  BoldFont = *-ExtraBold,
+  ItalicFont = *-ExtraBoldItalic,
+  BoldItalicFont = *-ExtraBoldItalic,
+  Ligatures = TeX,
+  Scale = 1.0
+]
+
 \newfontfamily\montserratBold{Montserrat}[
   Path = ./fonts/,
   Extension = .ttf,
@@ -55,27 +66,27 @@
 \geometry{left=0.7cm, right=0.7cm, top=0.7cm, bottom=0.7cm}
 
 % Custom commands
-\newcommand{\resumetitle}[1]{{\fontsize{12pt}{13pt}\selectfont\addfontfeatures{LetterSpace=16.0}\montserratBold\textbf{#1}\xspace}}
+\newcommand{\resumetitle}[1]{{\fontsize{12pt}{13pt}\selectfont\montserratExtraBold\addfontfeatures{LetterSpace=4.0}#1\xspace}}
 
 \newcommand{\resumeprofession}[1]{{\fontsize{7.8pt}{10.8pt}\selectfont\addfontfeatures{LetterSpace=32.0}#1\xspace}}
 
-\newcommand{\sectiontitle}[1]{{\fontsize{7.9pt}{7.6pt}\selectfont\montserratBold\addfontfeatures{LetterSpace=3.0}\textbf{#1}\xspace}}
+\newcommand{\sectiontitle}[1]{{\fontsize{7.9pt}{9.48pt}\selectfont\montserratExtraBold\addfontfeatures{LetterSpace=8.0}#1\xspace}}
 
-\newcommand{\sectiontitlesmall}[1]{{\fontsize{7.2pt}{7.2pt}\selectfont\montserratBold\addfontfeatures{LetterSpace=2.4}\textbf{#1}\xspace}}
+\newcommand{\sectiontitlesmall}[1]{{\fontsize{7.2pt}{8.64pt}\selectfont\montserratExtraBold\textbf{\addfontfeatures{LetterSpace=4.0}#1}\xspace}}
 
-\newcommand{\experiencetitle}[1]{{\fontsize{7.1pt}{10.2pt}\selectfont\bfseries\montserratBold\addfontfeatures{LetterSpace=3.0}\textbf{#1}\xspace}}
+\newcommand{\experiencetitle}[1]{{\fontsize{7.1pt}{8.52pt}\selectfont\bfseries\montserratBold\addfontfeatures{LetterSpace=3.0}#1\xspace}}
 
-\newcommand{\para}[1]{{\fontsize{6.5pt}{12.492pt}\selectfont\addfontfeatures{LetterSpace=0.8}\textbf{#1}\xspace}}
+\newcommand{\para}[1]{{\fontsize{7.2pt}{8.2pt}\selectfont\textbf{\addfontfeatures{LetterSpace=0.8}#1}\xspace}}
 
-\newcommand{\parabold}[1]{{\fontsize{6.5pt}{12.492pt}\selectfont\montserratBold\addfontfeatures{LetterSpace=0.8}\textbf{#1}\xspace}}
+\newcommand{\parabold}[1]{{\fontsize{7.2pt}{8.2pt}\selectfont\montserratExtraBold\addfontfeatures{LetterSpace=0.8}#1\xspace}}
 
-\newcommand{\paraitalic}[1]{{\fontsize{6.5pt}{12.492pt}\selectfont\addfontfeatures{LetterSpace=4.0}\textit{#1}\xspace}}
+\newcommand{\paraitalic}[1]{{\fontsize{7.2pt}{8.2pt}\selectfont\textit{\addfontfeatures{LetterSpace=0.8}#1}\xspace}}
 
-\newcommand{\linkfont}[1]{{\fontsize{6.5pt}{12.492pt}\selectfont\addfontfeatures{LetterSpace=1.0}\textit{\underline{#1}}\xspace}}
+\newcommand{\linkfont}[1]{{\fontsize{7.2pt}{4.492pt}\selectfont\textit{\underline{\addfontfeatures{LetterSpace=0.8}#1}}\xspace}}
 
 % Custom colors
 \definecolor{customblack}{HTML}{000000}
-\definecolor{customgray}{HTML}{494949}
+\definecolor{customgray}{HTML}{313030}
 \definecolor{customwhite}{HTML}{F4F4F4}
 \definecolor{customblue}{HTML}{6A5EEF}
 
@@ -87,28 +98,29 @@
 \newcommand{\firstskill}[1]{\hspace{3pt}{\para{\color{customgray}#1}}}%
 \newcommand{\skill}[1]{\para{\color{customgray}#1}}%
 \newcommand{\lang}[1]{\paraitalic{\color{customblack}#1}}%
-\newcommand{\langseparator}{\hspace{1.5pt}\fontsize{4.6pt}{9pt}\textcolor{customgray}{,}\hspace{1.5pt}}%
+\newcommand{\langseparator}{\hspace{1pt}\fontsize{4pt}{9pt}\textcolor{customgray}{,}\hspace{1.5pt}}%
 
 \newcommand{\str}[1]{%
   {\color{customblack}\textbf\textit{#1}}%
 }
 \newcommand{\customcol}[2]{%
+  \begin{tabularx}{\linewidth}{@{}p{155pt}@{}X@{}}%
+    \para{\color{customblack}#1}&#2%
+  \end{tabularx}%
+}
+
+\newcommand{\customcolskill}[2]{%
   \begin{tabularx}{\linewidth}{@{}p{140pt}@{}X@{}}%
     \para{\color{customblack}#1}&#2%
   \end{tabularx}%
 }
 
 \newcommand{\customcolproject}[2]{%
-  \begin{tabularx}{\linewidth}{@{}p{150pt}@{}X@{}}%
-    \para{\color{customblack}#1}&#2%
-  \end{tabularx}%
-}
-
-\newcommand{\customcolnarrow}[2]{%
   \begin{tabularx}{\linewidth}{@{}p{145pt}@{}X@{}}%
     \para{\color{customblack}#1}&#2%
   \end{tabularx}%
 }
+
 \newcommand{\sectioncontainer}[2]{%
   \sectiontitle{#1}\\[1.1ex]%
   \begin{minipage}{\linewidth}%
@@ -117,19 +129,20 @@
 }
 
 \newcommand{\sectioncontainerrow}[2]{%
-\begin{minipage}[t]{\dimexpr\linewidth-6pt\relax}%
+\begin{minipage}[t]{\dimexpr\linewidth-0pt\relax}%
 \begin{tabular}{@{}p{56pt}l@{}}%
-\sectiontitlesmall{\color{customblack}#1} & #2%
+  \sectiontitlesmall{\color{customblack}#1} & #2%
 \end{tabular}%
 \end{minipage}%
 }
+
 \newcommand{\sectioncontainerdoublerow}[4]{%
-\begin{tabular}{@{}p{60pt}p{90pt}p{50pt}p{\linewidth}@{}}%
+\begin{tabular}{@{}p{60pt}p{100pt}p{50pt}p{\linewidth}@{}}%
   \sectiontitlesmall{\color{customblack}#1} & #2 & \sectiontitlesmall{\color{customblack}#3} & #4%
 \end{tabular}%
 }
 \newcommand{\experiencecontainer}[5]{%
-  \experiencetitle{#1}#2\\[0.2ex]% title and location
+  \experiencetitle{#1}#2\\[0.4ex]% title and location
   #3% Engagements
   #4% Tasks
   #5% Skills
@@ -204,10 +217,9 @@
 	\end{tabularx}
 \end{multicols}
 \sectioncontainer{SUMMARY OF EXPERIENCE}{%
-\label{sec:summary}\vspace{0.1em}\para{\color{customgray}Committed software developer. Successfully led and delivered over \str{13 payed projects} for \str{international clients and agencies} across various industries, I stand out in delivering projects that make clients feel authentically represented, open source contributor, eager to bring my skills to a corporate environment.}
+\label{sec:summary}\vspace{0.1em}\para{\color{customgray}Committed software developer. Led and delivered over \str{13 payed projects} for \str{international clients}, I stand out in delivering projects that make clients feel authentically represented, open source contributor and eager to bring my skills to a corporate environment.}
 }\\[1.6ex]%
 \sectioncontainer{PROFESSIONAL EXPERIENCES}{%
-	% add a empty space to separate the sections and make it more readable
 	\vspace{0.2em}%
 	\label{sec:experiences}%
 	\experiencecontainerwithoutSkill{%
@@ -219,7 +231,7 @@
     \paraitalic{\color{customgray}August 2024 \-- October 2024}\vspace{0.14em}%
 	}{%
 		\begin{myitemize}%
-      \item \para{\color{customgray}Developed \str{full-stack web solutions} for luxury brands, including \customlink{https://www.french-dandy.com/en}{French Dandy} (Dubai), \str{Maud Diamond} (Brazil), and \customlink{https://hordestudio.com/}{Horde Studio} (USA), by advancing \str{automation capabilities} and integrating \str{AI-driven solutions} to streamline communication and improve code generation quality, resulting in enhanced delivery processes.}%
+      \item \para{\color{customgray}Developed \str{full-stack web solutions} for luxury brands, including \str{French Dandy} (Dubai), \str{Maud Diamond} (Brazil), and \str{Horde Studio} (USA), by advancing \str{automation capabilities} and integrating \str{AI-driven solutions} to streamline communication and improve code generation quality, resulting in enhanced delivery processes.}%
 			\item \para{\color{customgray}\str{Led the development} of French Dandy's official e-commerce website by closely collaborating with their team and following \str{Agile} best communication practices, resulting in a \str{high-performance platform} showcased at events like the \str{Forbes Middle East} and centralizing their marketing sources within 3 months.}%
 		\end{myitemize}\vspace{0.14em}
 	}%
@@ -230,7 +242,7 @@
 	}{%
 		\para{\color{customgray}Security Community's Firm}
 	}{%
-		\para{\color{customgray}Research \& Development, Web Tech Lead, Infra development}\langseparator{}\para{\color{customgray}Remote, Singapore}\langseparator{}\paraitalic{\color{customgray}May 2023 \-- July 2024}\vspace{0.14em}%
+		\para{\color{customgray}Research \& Development, Web Tech Lead}\langseparator{}\para{\color{customgray}Remote, Singapore}\langseparator{}\paraitalic{\color{customgray}May 2023 \-- July 2024}\vspace{0.14em}%
 	}{%
 		\begin{myitemize}%
 			\item \para{\color{customgray}\str{Designed and implemented} a \str{Golang RESTful API} wrapping a \str{Kubernetes controller-runtime} to realize infrastructure applications for a security requirements. This automation enhanced role-based deployment isolation, and \str{reduced the deployment time} on a two month team collaboration.}%
@@ -267,38 +279,46 @@
 }\\[1.6ex]%
 \sectioncontainer{SKILLS}{%
     \label{sec:skills}%
-    \customcol{Programming Languages}{%
-        \firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{Bash}\skill{Java, Kotlin}
-    }
-    \customcol{Cloud Services}{%
+    \customcolskill{Programming Languages}{%
+        \firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{Bash}\langseparator{}\skill{Java, Kotlin}
+    }%
+    \vspace{0.1em}
+    \customcolskill{Cloud Services}{%
         \firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespaces}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}
-    }
-    \customcol{Front-end / Back-end}{%
+    }%
+    \vspace{0.1em}
+    \customcolskill{Front-end / Back-end}{%
         \firstskill{React/Next.js}\langseparator{}\skill{Express}\langseparator{}\skill{Nest}\langseparator{}\skill{Tailwind}\langseparator{}\skill{State Management: Redux}\langseparator{}\skill{Tanstack}\langseparator{}\skill{WordPress}\langseparator{}\skill{Pnpm Monorepo}
-    }
-    \customcol{Containerization and CI/CD}{%
+    }%
+    \vspace{0.1em}
+    \customcolskill{Containerization and CI/CD}{%
         \firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}\langseparator{}\skill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Actions}
-    }
-    \customcol{Database}{%
+    }%
+    \vspace{0.1em}
+    \customcolskill{Database}{%
         \firstskill{Firebase}\langseparator{}\skill{MySQL}\langseparator{}\skill{MongoDB}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{Redis}
-    }
-    \customcol{Testing Practices}{%
-        \firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest, Postman)}
-    }
-    \customcol{Artificial Intelligence}{%
+    }%
+    \vspace{0.1em}
+    \customcolskill{Testing Practices}{%
+        \firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest)}
+    }%
+    \vspace{0.1em}
+    \customcolskill{Artificial Intelligence}{%
         \firstskill{Open AI}\langseparator{}\skill{ChatGPT-4}\langseparator{}\skill{Gemini}\langseparator{}\skill{Claude 3.5}\langseparator{}\skill{Cursor}\langseparator{}\skill{Copilot}\langseparator{}\skill{Midjourney}\langseparator{}\skill{RAG}\langseparator{}\skill{LangChain}
-    }
-    \customcol{Methodology and Standards}{%
+    }%
+    \vspace{0.1em}
+    \customcolskill{Methodology and Standards}{%
         \firstskill{Agile}\langseparator{}\skill{SOLID}\langseparator{}\skill{Design Patterns}\langseparator{}\skill{Refactoring}\langseparator{}\skill{Clean Code}\langseparator{}\skill{Distributed System}\langseparator{}\skill{Serverless}
-    }
-    \customcol{Design}{%
+    }%
+    \vspace{0.1em}
+    \customcolskill{Design}{%
         \firstskill{UI/UX}\langseparator{}\skill{Design thinking}\langseparator{}\skill{Photoshop}\langseparator{}\skill{Illustrator}\langseparator{}\skill{Figma}
     }
 }\\[1.6ex]%
 \sectioncontainer{CONTRIBUTIONS}{\label{sec:projects}%
 	\begingroup%
 	\label{proj:code-wrangler}%
-	\customcolproject{\experiencetitle{\color{customblack}Code Wrangler: Marketplace}}{\para{Open Source} \langseparator{}\paraitalic{\color{customgray}October 2024 \-- Present} \langseparator{}\linkfont{\href{https://github.com/aminesayagh/Code-Wrangler}{View the project repository}}}\vspace{0.16em}
+	\customcolproject{\experiencetitle{\color{customblack}Code Wrangler: Marketplace}}{\para{\color{customgray}Open Source} \langseparator{}\paraitalic{\color{customgray}October 2024 \-- Present} \langseparator{}\linkfont{\href{https://github.com/aminesayagh/Code-Wrangler}{View the project repository}}}\vspace{0.16em}
 	\begin{myitemize}
     \item \para{\color{customgray}Developed an \str{open-source marketplace} that automate generation of \str{structured knowledge bases} and integrates \str{Gen-AI pipelines} and \str{crawler automation}. This enhance developer productivity and streamlining knowledge management for \str{Retrieval-Augmented Generation (RAG)}.}
  \end{myitemize}
@@ -306,7 +326,7 @@
 	\vspace{0.6em}
   \begingroup%
   \label{proj:sofiane-pamart}\label{proj:music-nft}\label{proj:oussama-ommar}%
-  \customcolproject{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane Pamart}}{\paraitalic{\color{customgray}July 2021 \-- One week}}\vspace{0.16em}
+  \customcolproject{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane PAMART}}{\paraitalic{\color{customgray}July 2021} \langseparator{}\linkfont{\href{https://piano-king.com/}{View the project}}}\vspace{0.16em}
   \begin{myitemize}
       \item \para{\color{customgray}Collaborated in a \str{140-member team}, including \str{42 developers} guided by Oussama Ommar, to develop \str{visual NFTs} for artist Sofiane Pamart, achieving the launch in one week.}
   \end{myitemize}
@@ -325,20 +345,22 @@
 }\\[0ex]%
 \sectioncontainerrow{APPROVALS}{%
 	\label{references}%
-	\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}\customball{\customlink{https://drive.google.com/file/d/143J6kJH4jtJcah4JIbW-_MP__a_24xAV/view?usp=drive_link}{French Dandy}}\customball{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\customball{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}%
+	\firstskill{\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}}\langseparator{}\skill{\customlink{https://drive.google.com/file/d/143J6kJH4jtJcah4JIbW-_MP__a_24xAV/view?usp=drive_link}{French Dandy}}\langseparator{}\skill{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\langseparator{}\skill{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}%
 }\\[0.1ex]%
 \sectioncontainerrow{ACHIEVEMENTS}{%
-	\label{sec:achievement}%
-    \begin{minipage}{\linewidth}
-		\customlink{https://lavish.masayagh.com/}{Lavish Trading}%
-		\customball{\customlink{https://french-dandy.com/}{French Dandy}}%
-		\customball{\customlink{https://happy-water.masayagh.com/}{Happy Water}}%
-		\customball{\customlink{https://greening-energy.com/}{Greening Energy}}%
-		\customball{\customlink{https://coreas-ht.com/}{Coreas}}%
-		\customball{\customlink{https://hordestudio.com/}{Horde Studio}}%
-		\customball{\customlink{https://cybercohesions.com/}{Cyber Cohesion}}%
-		\customball{\customlink{https://figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma Portfolio}}%
+  \begin{minipage}{\dimexpr\linewidth-8pt\relax}  % Adjusted from 6pt
+		\firstskill{\customlink{https://lavish.masayagh.com/}{Lavish Trading}}\langseparator{}%
+		\skill{\customlink{https://french-dandy.com/}{French Dandy}}\langseparator{}%
+		\skill{\customlink{https://happy-water.masayagh.com/}{Happy Water}}\langseparator{}%
+		\skill{\customlink{https://greening-energy.com/}{Greening Energy}}\langseparator{}%
+		\skill{\customlink{https://coreas-ht.com/}{Coreas}}\langseparator{}%
+		\skill{\customlink{https://hordestudio.com/}{Horde Studio}}\langseparator{}%
+		\skill{\customlink{https://cybercohesions.com/}{Cyber Cohesion}}\langseparator{}%
+		\skill{\customlink{https://figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma}}%
 	\end{minipage}%
 }\\[0.7ex]%
-\sectioncontainerdoublerow{LANGUAGES}{\para{\color{customgray}English}\langseparator{} \para{\color{customgray}French}\langseparator{} \para{\color{customgray}Arabic}}{ACTIVITIES}{\para{\color{customgray}Tech writing \- see\customlink{https://www.linkedin.com/in/mohamedamine-sayagh/recent-activity/all/}{LinkedIn}or\customlink{https://medium.com/@masayagh}{Medium}\)}\langseparator{} \para{\color{customgray}Open source contributor}\langseparator{} \para{\color{customgray}Tech mentoring}}
+\sectioncontainerdoublerow{LANGUAGES}{
+  \para{\color{customgray}English}\langseparator{} \para{\color{customgray}French}\langseparator{} \para{\color{customgray}Arabic}}
+  {ACTIVITIES}
+  {\para{\color{customgray}Tech writing \- on \customlink{https://www.linkedin.com/in/mohamedamine-sayagh/recent-activity/all/}{LinkedIn} or \customlink{https://medium.com/@masayagh}{Medium}\)}\langseparator{} \para{\color{customgray}Open source contributor}\langseparator{} \para{\color{customgray}Tech mentoring}}
 \end{document}
