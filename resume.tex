@@ -93,7 +93,7 @@
   {\color{customblack}\textbf\textit{#1}}%
 }
 \newcommand{\customcol}[2]{%
-  \begin{tabularx}{\linewidth}{@{}p{145pt}@{}X@{}}%
+  \begin{tabularx}{\linewidth}{@{}p{140pt}@{}X@{}}%
     \para{\color{customblack}#1}&#2%
   \end{tabularx}%
 }
@@ -199,12 +199,12 @@
 		\para{\color{customgray}GitHub:}   & \customlink{https://github.com/aminesayagh/}{github.com/aminesayagh} \\%
 	\end{tabularx}
 	\begin{tabularx}{\linewidth}{@{}Xr@{}}%
-		\para{\color{customgray}Programming Lang:} & \para{\color{customgray}TypeScript, PHP, Golang} \\[0.6ex]
+		\para{\color{customgray}Programming Lang:} & \para{\color{customgray}TypeScript, PHP, Java} \\[0.6ex]
 		\para{\color{customgray}Portfolio:}        & \customlink{https://masayagh.com/}{masayagh.com} \\%
 	\end{tabularx}
 \end{multicols}
 \sectioncontainer{SUMMARY OF EXPERIENCE}{%
-\label{sec:summary}\vspace{0.1em}\para{\color{customgray}Committed software developer. Successfully led and delivered over \str{13 payed projects} for \str{international clients and agencies} across various industries, I stand out in delivering projects that make clients feel authentically represented, Currently pursuing a master's degree, and eager to bring my skills to a corporate environment.}
+\label{sec:summary}\vspace{0.1em}\para{\color{customgray}Committed software developer. Successfully led and delivered over \str{13 payed projects} for \str{international clients and agencies} across various industries, I stand out in delivering projects that make clients feel authentically represented, open source contributor, eager to bring my skills to a corporate environment.}
 }\\[1.6ex]%
 \sectioncontainer{PROFESSIONAL EXPERIENCES}{%
 	% add a empty space to separate the sections and make it more readable
@@ -267,23 +267,20 @@
 }\\[1.6ex]%
 \sectioncontainer{SKILLS}{%
     \label{sec:skills}%
+    \customcol{Programming Languages}{%
+        \firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{Bash}\skill{Java, Kotlin}
+    }
     \customcol{Cloud Services}{%
         \firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespaces}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}
-    }
-    \customcol{Containerization and Orchestration}{%
-        \firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}
-    }
-    \customcol{Programming Languages}{%
-        \firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{Bash}
     }
     \customcol{Front-end / Back-end}{%
         \firstskill{React/Next.js}\langseparator{}\skill{Express}\langseparator{}\skill{Nest}\langseparator{}\skill{Tailwind}\langseparator{}\skill{State Management: Redux}\langseparator{}\skill{Tanstack}\langseparator{}\skill{WordPress}\langseparator{}\skill{Pnpm Monorepo}
     }
+    \customcol{Containerization and CI/CD}{%
+        \firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}\langseparator{}\skill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Actions}
+    }
     \customcol{Database}{%
         \firstskill{Firebase}\langseparator{}\skill{MySQL}\langseparator{}\skill{MongoDB}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{Redis}
-    }
-    \customcol{Version Control and CI/CD}{%
-        \firstskill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Actions}
     }
     \customcol{Testing Practices}{%
         \firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest, Postman)}
@@ -308,13 +305,6 @@
 	\endgroup
 	\vspace{0.6em}
   \begingroup%
-  \label{proj:zec}\label{proj:data-parsing-library}%
-  \customcolproject{\experiencetitle{\color{customblack}Zec: Data Parsing Library}}{\para{Open Source} \langseparator{}\paraitalic{\color{customgray}May 2024 \-- July 2024} \langseparator{}\linkfont{\href{https://github.com/aminesayagh/Zec-Data-Parsing}{View the project documentation}}}\vspace{0.16em}
-  \begin{myitemize}
-    \item \para{\color{customgray}Developed  standalone \str{PHP open-source library} that orchestrates \str{business-specific data parsers} while ensuring data confidentiality by leveraging \str{schema definitions} and \str{modular configuration management}. This solution enhances data processing security, enabling seamless coordination of parsers without direct data handling.}  \end{myitemize}
-  \endgroup
-  \vspace{0.6em}
-  \begingroup%
   \label{proj:sofiane-pamart}\label{proj:music-nft}\label{proj:oussama-ommar}%
   \customcolproject{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane Pamart}}{\paraitalic{\color{customgray}July 2021 \-- One week}}\vspace{0.16em}
   \begin{myitemize}
@@ -325,10 +315,10 @@
 \sectioncontainer{EDUCATION}{%
 	\label{sec:education}%
 	\begingroup
-		\customcol{\parabold{\color{customgray}Master's in Big Data \& Cloud Computing}}{%
+		\customcol{\para{\color{customblack}Master's in Big Data \& Cloud Computing}}{%
       \para{\color{customgray}University of Hassan II, Casablanca, expected graduation 2025}
     }\\%
-		\customcol{\parabold{\color{customgray}Bachelor's in Computer Science}}{%
+		\customcol{\para{\color{customblack}Bachelor's in Computer Science}}{%
       \para{\color{customgray}University of Hassan II, Casablanca, 2022 \-- 2023}
     }\\%
 	\endgroup%
