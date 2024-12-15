@@ -21,6 +21,7 @@
 \usepackage{tabularx}
 \usepackage{array}
 
+\ProvidesPackage{montserrat}
 \usepackage{fontspec}
 
 \usepackage{multicol}
@@ -29,60 +30,93 @@
 
 \titlespacing*{\section}{0pt}{1.5ex plus .1ex minus .1ex}{1.5ex plus .1ex}
 
-\newfontfamily\montserratExtraBold{Montserrat}[
-  Path = ./fonts/,
-  Extension = .ttf,
-  UprightFont = *-ExtraBold,
-  BoldFont = *-ExtraBold,
-  ItalicFont = *-ExtraBoldItalic,
-  BoldItalicFont = *-ExtraBoldItalic,
-  Ligatures = TeX,
-  Scale = 1.0
-]
+% \newfontfamily\montserratExtraBold{Montserrat}[
+%   Path = ./fonts/,
+%   Extension = .otf,
+%   UprightFont = *-ExtraBold,
+%   BoldFont = *-ExtraBold,
+%   ItalicFont = *-ExtraBoldItalic,
+%   BoldItalicFont = *-ExtraBoldItalic,
+%   Ligatures = TeX,
+%   Scale = 1.0
+% ]
 
-\newfontfamily\montserratBold{Montserrat}[
-  Path = ./fonts/,
-  Extension = .ttf,
-  UprightFont = *-SemiBold,
-  BoldFont = *-Bold,
-  ItalicFont = *-MediumItalic,
-  BoldItalicFont = *-BoldItalic,
+% \newfontfamily\montserratBold{Montserrat}[
+%   Path = ./fonts/,
+%   Extension = .otf,
+%   UprightFont = *-SemiBold,
+%   BoldFont = *-Bold,
+%   ItalicFont = *-MediumItalic,
+%   BoldItalicFont = *-BoldItalic,
+%   Ligatures = TeX,
+%   Scale = 1.0
+% ]
+
+\newfontfamily{\Montserrat}[
+  NFSSFamily=Montserrat,% <--- the key
+  %Path=fonts/montserrat/,% <--- I can only use the TeX Live ones
+  Extension = .otf,% <--- I have OpenType fonts
   Ligatures = TeX,
-  Scale = 1.0
-]
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic,
+  FontFace={xl}{n}{*-ExtraLight},
+  FontFace={xl}{it}{*-ExtraLightItalic},
+  FontFace={l}{n}{*-Light},
+  FontFace={l}{it}{*-LightItalic},
+  FontFace={mb}{n}{*-Medium},
+  FontFace={mb}{it}{*-MediumItalic},
+  FontFace={k}{n}{*-Black},
+  FontFace={k}{it}{*-BlackItalic},
+]{Montserrat}
 
 % Font settings
 \setmainfont{Montserrat}[
   Path = ./fonts/,
-  Extension = .ttf,
+  Extension = .otf,
   UprightFont = *-Medium,
   BoldFont = *-Medium,
   ItalicFont = *-MediumItalic,
   BoldItalicFont = *-MediumItalic,
   Ligatures = TeX,
-  Scale = 1.0
+  Scale = 1.0,
+  FontFace={xl}{n}{*-ExtraLight},
+  FontFace={xl}{it}{*-ExtraLightItalic},
+  FontFace={l}{n}{*-Regular},
+  FontFace={l}{it}{*-LightItalic},
+  FontFace={mb}{n}{*-Medium},
+  FontFace={mb}{it}{*-MediumItalic},
+  FontFace={k}{n}{*-Bold},
+  FontFace={k}{it}{*-BoldItalic},
 ]
+
+\DeclareOption{default}{%
+  \renewcommand{\familydefault}{Montserrat}%
+}
+\ProcessOptions\relax
 
 \geometry{left=0.7cm, right=0.7cm, top=0.7cm, bottom=0.7cm}
 
+% {\fontseries{mb}\selectfont Montserrat}
 % Custom commands
-\newcommand{\resumetitle}[1]{{\fontsize{12pt}{13pt}\selectfont\montserratExtraBold\addfontfeatures{LetterSpace=4.0}#1\xspace}}
+\newcommand{\resumetitle}[1]{{\fontsize{12pt}{12pt}\fontseries{k}\addfontfeatures{LetterSpace=12.0}\selectfont #1\xspace}}
 
-\newcommand{\resumeprofession}[1]{{\fontsize{7.8pt}{10.8pt}\selectfont\addfontfeatures{LetterSpace=32.0}#1\xspace}}
+\newcommand{\resumeprofession}[1]{{\fontsize{7.8pt}{10.8pt}\fontseries{l}\addfontfeatures{LetterSpace=52.0}\selectfont #1\xspace}}
 
-\newcommand{\sectiontitle}[1]{{\fontsize{7.9pt}{9.48pt}\selectfont\montserratExtraBold\addfontfeatures{LetterSpace=8.0}#1\xspace}}
+\newcommand{\sectiontitle}[1]{{\fontsize{7.9pt}{9.48pt}\fontseries{k}\addfontfeatures{LetterSpace=8.0}\selectfont #1\xspace}}
 
-\newcommand{\sectiontitlesmall}[1]{{\fontsize{7.2pt}{8.64pt}\selectfont\montserratExtraBold\textbf{\addfontfeatures{LetterSpace=4.0}#1}\xspace}}
+\newcommand{\sectiontitlesmall}[1]{{\fontsize{7.1pt}{8.64pt}\fontseries{k}\addfontfeatures{LetterSpace=4.0}\selectfont #1\xspace}}
 
-\newcommand{\experiencetitle}[1]{{\fontsize{7.1pt}{8.52pt}\selectfont\bfseries\montserratBold\addfontfeatures{LetterSpace=3.0}#1\xspace}}
+\newcommand{\experiencetitle}[1]{{\fontsize{7.1pt}{8.52pt}\fontseries{k}\addfontfeatures{LetterSpace=5.0}\selectfont #1\xspace}}
 
-\newcommand{\para}[1]{{\fontsize{7.2pt}{8.2pt}\selectfont\textbf{\addfontfeatures{LetterSpace=0.8}#1}\xspace}}
+\newcommand{\para}[1]{{\fontsize{7.2pt}{8.2pt}\fontseries{mb}\addfontfeatures{LetterSpace=1}\selectfont #1\xspace}}
 
-\newcommand{\parabold}[1]{{\fontsize{7.2pt}{8.2pt}\selectfont\montserratExtraBold\addfontfeatures{LetterSpace=0.8}#1\xspace}}
+\newcommand{\parabold}[1]{{\fontsize{7.2pt}{8.2pt}\addfontfeatures{LetterSpace=0.8}\selectfont #1\xspace}}
 
-\newcommand{\paraitalic}[1]{{\fontsize{7.2pt}{8.2pt}\selectfont\textit{\addfontfeatures{LetterSpace=0.8}#1}\xspace}}
+\newcommand{\paraitalic}[1]{{\fontsize{7.2pt}{8.2pt}\addfontfeatures{LetterSpace=0.8}\selectfont #1\xspace}}
 
-\newcommand{\linkfont}[1]{{\fontsize{7.2pt}{4.492pt}\selectfont\textit{\underline{\addfontfeatures{LetterSpace=0.8}#1}}\xspace}}
+\newcommand{\linkfont}[1]{\underline{{\fontsize{7.2pt}{8.2pt}\fontseries{mb}\addfontfeatures{LetterSpace=1}\selectfont #1\xspace}}}
 
 % Custom colors
 \definecolor{customblack}{HTML}{000000}
@@ -110,36 +144,39 @@
 }
 
 \newcommand{\customcolskill}[2]{%
-  \begin{tabularx}{\linewidth}{@{}p{140pt}@{}X@{}}%
-    \para{\color{customblack}#1}&#2%
-  \end{tabularx}%
+\noindent\begin{minipage}[t]{124pt}%
+\textbf{\para{\color{customblack}#1}}%
+\end{minipage}%
+\begin{minipage}[t]{\dimexpr\linewidth-124pt\relax}%
+#2%
+\end{minipage}\\[0.3em]%
 }
 
 \newcommand{\customcolproject}[2]{%
-  \begin{tabularx}{\linewidth}{@{}p{145pt}@{}X@{}}%
-    \para{\color{customblack}#1}&#2%
-  \end{tabularx}%
+\begin{tabularx}{\linewidth}{@{}p{145pt}@{}X@{}}%
+\para{\color{customblack}#1}& #2%
+\end{tabularx}%
 }
 
 \newcommand{\sectioncontainer}[2]{%
-  \sectiontitle{#1}\\[1.1ex]%
-  \begin{minipage}{\linewidth}%
-	#2%
-  \end{minipage}%
-}
-
-\newcommand{\sectioncontainerrow}[2]{%
-\begin{minipage}[t]{\dimexpr\linewidth-0pt\relax}%
-\begin{tabular}{@{}p{56pt}l@{}}%
-  \sectiontitlesmall{\color{customblack}#1} & #2%
-\end{tabular}%
+\sectiontitle{#1}\\[1.1ex]%
+\begin{minipage}{\linewidth}%
+#2%
 \end{minipage}%
 }
 
+
+\newcommand{\sectioncontainerrow}[2]{%
+\begin{tabularx}{\linewidth}{@{}p{56pt}X@{}}%
+\sectiontitlesmall{\color{customblack}#1} & #2%
+\end{tabularx}%
+}
+
 \newcommand{\sectioncontainerdoublerow}[4]{%
-\begin{tabular}{@{}p{60pt}p{100pt}p{50pt}p{\linewidth}@{}}%
-  \sectiontitlesmall{\color{customblack}#1} & #2 & \sectiontitlesmall{\color{customblack}#3} & #4%
-\end{tabular}%
+\begin{tabularx}{\linewidth}{@{}p{64pt}p{100pt}p{50pt}X@{}}%
+\sectiontitlesmall{\color{customblack}#1} & #2 & 
+\sectiontitlesmall{\color{customblack}#3} & #4%
+\end{tabularx}%
 }
 \newcommand{\experiencecontainer}[5]{%
   \experiencetitle{#1}#2\\[0.4ex]% title and location
@@ -148,7 +185,7 @@
   #5% Skills
 }
 \newcommand{\experiencecontainerwithoutSkill}[4]{%
-  \experiencetitle{#1}#2\\[0.2ex]% title and location
+  \experiencetitle{#1}#2\\[0.3ex]% title and location
   #3% Engagements
   #4% Tasks
 }
@@ -189,7 +226,7 @@
 
 
 \pagestyle{empty}
-\linespread{0.8}
+\linespread{0.9}
 
 \begin{document}
 
@@ -203,18 +240,19 @@
 \raggedcolumns% Reduce the margin on each column
 \renewcommand{\arraystretch}{1.1}% Adjust this value to increase/decrease line spacing
 \begin{multicols}{3}%
-	\label{sec:contact}\begin{tabularx}{\linewidth}{@{}Xr@{}}%
-		\para{\color{customgray}Email:}      & \customlink{mailto:contact@masayagh.com?subject=CV Inquiry}{contact@masayagh.com} \\%
-		\para{\color{customgray}Phone (Ma):} & \customlink{tel:+212616137124}{(+212) 616\--137124}                                   \\%
-	\end{tabularx}
-	\begin{tabularx}{\linewidth}{@{}Xr@{}}%
-		\para{\color{customgray}LinkedIn:} & \customlink{https://www.linkedin.com/in/mohamedamine-sayagh/}{linkedin.com/in/masayagh} \\%
-		\para{\color{customgray}GitHub:}   & \customlink{https://github.com/aminesayagh/}{github.com/aminesayagh} \\%
-	\end{tabularx}
-	\begin{tabularx}{\linewidth}{@{}Xr@{}}%
-		\para{\color{customgray}Programming Lang:} & \para{\color{customgray}TypeScript, PHP, Java} \\[0.6ex]
-		\para{\color{customgray}Portfolio:}        & \customlink{https://masayagh.com/}{masayagh.com} \\%
-	\end{tabularx}
+\label{sec:contact}%
+\begin{tabularx}{\linewidth}{@{}l>{\raggedleft\arraybackslash}X@{}}%
+\para{\color{customgray}Email:}      & \customlink{mailto:contact@masayagh.com?subject=CV Inquiry}{contact@masayagh.com}\\%
+\para{\color{customgray}Phone (Ma):} & \customlink{tel:+212616137124}{(+212) 616\--137124}\\%
+\end{tabularx}
+\begin{tabularx}{\linewidth}{@{}l>{\raggedleft\arraybackslash}X@{}}%
+\para{\color{customgray}LinkedIn:} & \customlink{https://www.linkedin.com/in/mohamedamine-sayagh/}{/in/mohamedamine-sayagh}\\%
+\para{\color{customgray}GitHub:}   & \customlink{https://github.com/aminesayagh/}{github.com/aminesayagh}\\%
+\end{tabularx}
+\begin{tabularx}{\linewidth}{@{}l>{\raggedleft\arraybackslash}X@{}}%
+\para{\color{customgray}Portfolio:} & \customlink{https://masayagh.com/}{masayagh.com}\\%
+\para{\color{customgray}Programming Lang:} & \textbf{\para{\color{customgray}TypeScript, PHP, Java}}\\%
+\end{tabularx}
 \end{multicols}
 \sectioncontainer{SUMMARY OF EXPERIENCE}{%
 \label{sec:summary}\vspace{0.1em}\para{\color{customgray}Committed software developer. Led and delivered over \str{13 payed projects} for \str{international clients}, I stand out in delivering projects that make clients feel authentically represented, open source contributor and eager to bring my skills to a corporate environment.}
@@ -278,42 +316,33 @@
 	}%
 }\\[1.6ex]%
 \sectioncontainer{SKILLS}{%
-    \label{sec:skills}%
-    \customcolskill{Programming Languages}{%
-        \firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{Bash}\langseparator{}\skill{Java, Kotlin}
-    }%
-    \vspace{0.1em}
-    \customcolskill{Cloud Services}{%
-        \firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespaces}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}
-    }%
-    \vspace{0.1em}
-    \customcolskill{Front-end / Back-end}{%
-        \firstskill{React/Next.js}\langseparator{}\skill{Express}\langseparator{}\skill{Nest}\langseparator{}\skill{Tailwind}\langseparator{}\skill{State Management: Redux}\langseparator{}\skill{Tanstack}\langseparator{}\skill{WordPress}\langseparator{}\skill{Pnpm Monorepo}
-    }%
-    \vspace{0.1em}
-    \customcolskill{Containerization and CI/CD}{%
-        \firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}\langseparator{}\skill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Actions}
-    }%
-    \vspace{0.1em}
-    \customcolskill{Database}{%
-        \firstskill{Firebase}\langseparator{}\skill{MySQL}\langseparator{}\skill{MongoDB}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{Redis}
-    }%
-    \vspace{0.1em}
-    \customcolskill{Testing Practices}{%
-        \firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest)}
-    }%
-    \vspace{0.1em}
-    \customcolskill{Artificial Intelligence}{%
-        \firstskill{Open AI}\langseparator{}\skill{ChatGPT-4}\langseparator{}\skill{Gemini}\langseparator{}\skill{Claude 3.5}\langseparator{}\skill{Cursor}\langseparator{}\skill{Copilot}\langseparator{}\skill{Midjourney}\langseparator{}\skill{RAG}\langseparator{}\skill{LangChain}
-    }%
-    \vspace{0.1em}
-    \customcolskill{Methodology and Standards}{%
-        \firstskill{Agile}\langseparator{}\skill{SOLID}\langseparator{}\skill{Design Patterns}\langseparator{}\skill{Refactoring}\langseparator{}\skill{Clean Code}\langseparator{}\skill{Distributed System}\langseparator{}\skill{Serverless}
-    }%
-    \vspace{0.1em}
-    \customcolskill{Design}{%
-        \firstskill{UI/UX}\langseparator{}\skill{Design thinking}\langseparator{}\skill{Photoshop}\langseparator{}\skill{Illustrator}\langseparator{}\skill{Figma}
-    }
+\customcolskill{Programming Languages}{
+\firstskill{JavaScript / TypeScript}\langseparator{}\skill{PHP}\langseparator{}\skill{Golang}\langseparator{}\skill{SQL}\langseparator{}\skill{Bash}\langseparator{}\skill{Java, Kotlin}
+}
+\customcolskill{Cloud Services}{
+\firstskill{Google Cloud}\langseparator{}\skill{AWS}\langseparator{}\skill{Oracle Cloud}\langseparator{}\skill{Github Codespaces}\langseparator{}\skill{Heroku}\langseparator{}\skill{Vercel}\langseparator{}\skill{Cloudflare}%
+}
+\customcolskill{Front-end / Back-end}{%
+\firstskill{React/Next.js}\langseparator{}\skill{Express}\langseparator{}\skill{Nest}\langseparator{}\skill{Tailwind}\langseparator{}\skill{State Management: Redux}\langseparator{}\skill{Tanstack}\langseparator{}\skill{WordPress}\langseparator{}\skill{Pnpm Monorepo}%
+}
+\customcolskill{Containerization and CI/CD}{%
+\firstskill{Docker}\langseparator{}\skill{Docker Compose}\langseparator{}\skill{Kubernetes}\langseparator{}\skill{NGINX}\langseparator{}\skill{Git}\langseparator{}\skill{GitHub}\langseparator{}\skill{GitHub Actions}%
+}
+\customcolskill{Database}{%
+\firstskill{Firebase}\langseparator{}\skill{MySQL}\langseparator{}\skill{MongoDB}\langseparator{}\skill{PostgreSQL}\langseparator{}\skill{Redis}%
+}
+\customcolskill{Testing Practices}{%
+\firstskill{Unit Testing (Jest)}\langseparator{}\skill{Functional Testing (Cypress)}\langseparator{}\skill{Regression Testing (Puppeteer)}\langseparator{}\skill{Integration Testing (Supertest)}%
+}
+\customcolskill{Artificial Intelligence}{%
+\firstskill{Open AI}\langseparator{}\skill{ChatGPT-4}\langseparator{}\skill{Gemini}\langseparator{}\skill{Claude 3.5}\langseparator{}\skill{Cursor}\langseparator{}\skill{Copilot}\langseparator{}\skill{Midjourney}\langseparator{}\skill{RAG}\langseparator{}\skill{LangChain}%
+}
+\customcolskill{Methodology and Standards}{%
+\firstskill{Agile}\langseparator{}\skill{SOLID}\langseparator{}\skill{Design Patterns}\langseparator{}\skill{Refactoring}\langseparator{}\skill{Clean Code}\langseparator{}\skill{Distributed System}\langseparator{}\skill{Serverless}%
+}
+\customcolskill{Design}{
+\firstskill{UI/UX}\langseparator{}\skill{Design thinking}\langseparator{}\skill{Photoshop}\langseparator{}\skill{Illustrator}\langseparator{}\skill{Figma}%
+}
 }\\[1.6ex]%
 \sectioncontainer{CONTRIBUTIONS}{\label{sec:projects}%
 	\begingroup%
@@ -321,14 +350,14 @@
 	\customcolproject{\experiencetitle{\color{customblack}Code Wrangler: Marketplace}}{\para{\color{customgray}Open Source} \langseparator{}\paraitalic{\color{customgray}October 2024 \-- Present} \langseparator{}\linkfont{\href{https://github.com/aminesayagh/Code-Wrangler}{View the project repository}}}\vspace{0.16em}
 	\begin{myitemize}
     \item \para{\color{customgray}Developed an \str{open-source marketplace} that automate generation of \str{structured knowledge bases} and integrates \str{Gen-AI pipelines} and \str{crawler automation}. This enhance developer productivity and streamlining knowledge management for \str{Retrieval-Augmented Generation (RAG)}.}
- \end{myitemize}
+  \end{myitemize}
 	\endgroup
 	\vspace{0.6em}
   \begingroup%
   \label{proj:sofiane-pamart}\label{proj:music-nft}\label{proj:oussama-ommar}%
   \customcolproject{\experiencetitle{\color{customblack}Music NFT, Artist Sofiane PAMART}}{\paraitalic{\color{customgray}July 2021} \langseparator{}\linkfont{\href{https://piano-king.com/}{View the project}}}\vspace{0.16em}
   \begin{myitemize}
-      \item \para{\color{customgray}Collaborated in a \str{140-member team}, including \str{42 developers} guided by Oussama Ommar, to develop \str{visual NFTs} for artist Sofiane Pamart, achieving the launch in one week.}
+      \item \para{\color{customgray}Collaborated as full stack developer in a \str{140-member team}, including \str{42 developers} guided by Oussama OMMAR, to design and develop \str{visual NFTs} for artist Sofiane Pamart.}
   \end{myitemize}
   \endgroup%
 }\\[1.9ex]%
@@ -342,13 +371,14 @@
       \para{\color{customgray}University of Hassan II, Casablanca, 2022 \-- 2023}
     }\\%
 	\endgroup%
-}\\[0ex]%
+}\\%
 \sectioncontainerrow{APPROVALS}{%
 	\label{references}%
 	\firstskill{\customlink{https://drive.google.com/file/d/1UzBM7WzxPOZkD3ZYToU9FgHYsCCWzD4l/view?usp=drive_link}{Cyber Cohesion}}\langseparator{}\skill{\customlink{https://drive.google.com/file/d/143J6kJH4jtJcah4JIbW-_MP__a_24xAV/view?usp=drive_link}{French Dandy}}\langseparator{}\skill{\customlink{https://docs.google.com/document/d/1Ylvz8PNhcA5ZDxVRzLO0ivu6e3476z1t}{Jonas Digital Agency}}\langseparator{}\skill{\customlink{https://drive.google.com/file/d/1Yw9G4V9ci6CJOFIElqGTghFU7WvIJkoA/view}{Lavish Trading}}%
-}\\[0.1ex]%
+}\\%
 \sectioncontainerrow{ACHIEVEMENTS}{%
-  \begin{minipage}{\dimexpr\linewidth-8pt\relax}  % Adjusted from 6pt
+  \label{achievements}%
+  \begin{minipage}{\dimexpr\linewidth-8pt\relax}% Adjusted from 6pt
 		\firstskill{\customlink{https://lavish.masayagh.com/}{Lavish Trading}}\langseparator{}%
 		\skill{\customlink{https://french-dandy.com/}{French Dandy}}\langseparator{}%
 		\skill{\customlink{https://happy-water.masayagh.com/}{Happy Water}}\langseparator{}%
@@ -358,7 +388,7 @@
 		\skill{\customlink{https://cybercohesions.com/}{Cyber Cohesion}}\langseparator{}%
 		\skill{\customlink{https://figma.com/design/ydOVsavgbcL6QwFJiyUuBO/Portfolio?m=auto&t=NP0EyAcVDHp6E6nb-1}{Figma}}%
 	\end{minipage}%
-}\\[0.7ex]%
+}\\%
 \sectioncontainerdoublerow{LANGUAGES}{
   \para{\color{customgray}English}\langseparator{} \para{\color{customgray}French}\langseparator{} \para{\color{customgray}Arabic}}
   {ACTIVITIES}
