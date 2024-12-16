@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1734271054 "/workspaces/Resume-Template-Latex/resume.tex" "/workspaces/Resume-Template-Latex/resume.pdf" "resume" 1734271054
+["pdflatex"] 1734364894 "/workspaces/Resume-Template-Latex/resume.tex" "/workspaces/Resume-Template-Latex/resume.pdf" "resume" 1734364898
   "/etc/texmf/web2c/texmf.cnf" 1727464403 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/codespace/.texlive2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1727507159 8261179 b712d6050a5a8a4991bd84f212ff5659 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -25,8 +25,11 @@
   "/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty" 1576191570 19336 ce7ae9438967282886b3b036cfad1e4d ""
   "/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty" 1576625391 3935 57aa3c3e203a5c2effb4d2bd2efbc323 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1580683321 20023 e427dd9e17e239bf926ef3aab67fe35e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty" 1580683321 5050 8933a39ad74377accd18991c5eb90c58 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo" 1580683321 8462 61fdf79debfc3dc4dab35ec6cf83fbf7 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty" 1256071977 4523 a9044e2dc40e764dac60d2acda7ae919 ""
   "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty" 1580769101 1655 e4b882de9102a2127dc000ff79bd1938 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty" 1338588508 22449 7ec15c16d0d66790f28e90343c5434a3 ""
   "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1515537368 17334 520b9b85ad8a2a48eda3f643e27a5179 ""
@@ -53,10 +56,10 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1463002160 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
-  "/workspaces/Resume-Template-Latex/resume.aux" 1734271054 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/workspaces/Resume-Template-Latex/resume.tex" 1734271053 18499 e32e87f443448b83e182b7fe8d368149 ""
-  "resume.tex" 1734271053 18499 e32e87f443448b83e182b7fe8d368149 ""
+  "/workspaces/Resume-Template-Latex/resume.aux" 1734364894 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/workspaces/Resume-Template-Latex/resume.tex" 1734364898 18968 a8a61ba8551ea74972a0714955e2360c ""
+  "resume.tex" 1734364898 18968 a8a61ba8551ea74972a0714955e2360c ""
   (generated)
+  "/workspaces/Resume-Template-Latex/resume.pdf"
   "/workspaces/Resume-Template-Latex/resume.log"
   "resume.log"
-  "/workspaces/Resume-Template-Latex/resume.pdf"
